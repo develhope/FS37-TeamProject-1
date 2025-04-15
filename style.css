@@ -7,7 +7,17 @@
     --font-pulsanti: 500 1rem / 1.5 'Helvetica Now Text Medium', Helvetica, Arial, sans-serif;
     --font-scarpe-icone: 500 1.5rem / 1.2 'Helvetica Now Display Medium', Helvetica, Arial, sans-serif;
     --font-merch:  500 1.25rem / 1.5 'Helvetica Now Display Medium', Helvetica, Arial, sans-serif;
-    --font-footer: 500 .875rem / 1.5 'Helvetica Now Text Medium', Helvetica, Arial, sans-serif;   
+    --font-footer: 500 .875rem / 1.5 'Helvetica Now Text Medium', Helvetica, Arial, sans-serif; 
+    
+    --color-white:#FFFFFF; /*background e testi su sfondi scuri  */
+    --color-black: #111111; /*usato su testi anche per hover testo */
+    --color-light-grey: #F5F5F5; /* top bar, input */
+    --color-grey: #e5e5e5; /*button carosello  */
+    --color-disabled-btn: #9e9ea0; /* button carosello */
+    --color-hover-btn: #CACACB; /* button */
+    --color-text-footer: #707072;
+
+
 }
 
 @font-face {
