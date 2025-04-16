@@ -12,6 +12,4 @@ Gli sviluppatori:
 
 - Francesca Castangia
 
-- Agata Serranò
-
 - Christian Sestito
