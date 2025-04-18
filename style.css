@@ -16,24 +16,26 @@
     --color-disabled-btn: #9e9ea0; /* button carosello */
     --color-hover-btn: #CACACB; /* button */
     --color-text-footer: #707072;
+}
 
-    --pulsanti-text-align: center;
-    --pulsanti-text-decoration: none;
-    --pulsanti-box-sizing: border-box;
-    --pulsanti-justify-content: center;
-    --pulsanti-align-items: center;
-    --pulsanti-display: flex;
-    --pulsanti-cursor: pointer;
-    --pulsanti-margin-top: 6px;
-    --pulsanti-margin-bottom: 6px;
-    --pulsanti-left: 16px;
-    --pulsanti-right: 16px;
-    --pulsanti-min-height: 34px;
-    --pulsanti-position: relative;
-    --pulsanti-overflow: hidden;
-    --pulsanti-border: none;
-    --pulsanti-border-radius: 30px;
-    --pulsanti-outline: none;
+button {
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-left: 16px;
+    margin-right: 16px;
+    min-height: 34px;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    border-radius: 30px;
+    outline: none;
 }
 
 @font-face {
