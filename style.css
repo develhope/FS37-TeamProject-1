@@ -28,21 +28,18 @@
 }
 .frecce {
   display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--color-light-grey);
   height: 48px;
   width: 48px;
   border-radius: 24px;
-  padding: 0;
-  border: 0;
   cursor: pointer;
-  justify-content: center;
-  align-items: center;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 28px;
   transition-duration: 250ms;
   transition-timing-function: ease;
-  transition-delay: 0s;
+}
+.frecce:hover {
+  background-color: var(--color-hover-btn);
 }
 @font-face {
   font-family: "Nike Futura ND";
