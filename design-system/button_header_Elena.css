@@ -23,7 +23,8 @@ body {
   background-color: #f5f5f5;
   border-radius: 50px;
   padding: 6px;
-  width: 30%;
+  padding-left: 0;
+  min-width: 10%;
   height: 24px;
 }
 
@@ -35,7 +36,7 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  margin-right: 8px;       
+  margin-right: 8px;
   color: #111;
 }
 
@@ -45,7 +46,7 @@ body {
   background: transparent;
   font-size: 14px;
   color: #767676;
-  width: 80px;
+  min-width: 10%;
   text-align: left;
   margin-right: 0;
 }
@@ -58,21 +59,24 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 6px;
 }
 
-.preferiti:hover, .carrello:hover {
+.preferiti:hover,
+.carrello:hover {
   background-color: #cacacb;
   padding: 6px;
   border-radius: 50%;
 }
 
-.search-icon-container:hover {background-color: #cacacb;
+.search-icon-container:hover {
+  background-color: #cacacb;
 }
 
 #nav-search-icon:hover {
-background-color: #9e9ea0;
-padding: 6px;
-border-radius: 50%;
+  background-color: #9e9ea0;
+  padding: 6px;
+  border-radius: 50%;
 }
 
 .preferiti svg,
@@ -81,45 +85,47 @@ border-radius: 50%;
   height: 24px;
 }
 
-.burger-menu {display: none;
-color: #111;
-align-items: center;
-justify-content: center;
-cursor: pointer;
+.burger-menu {
+  display: none;
+  color: #111;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 /* Tablet e mobile: max-width 1024px */
 @media (max-width: 1024px) {
-.search-input {
-  display: none;
-}
+  .search-input {
+    display: none;
+  }
 
-#nav-search-icon {
-  width: 36px;
-  height: 36px;
-  padding: 0;
-  margin-right: 0;
-  border-radius: 50%;
-}
+  #nav-search-icon {
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    margin-right: 0;
+    border-radius: 50%;
+  }
 
-#nav-search-icon:hover {
-  background-color: #cacacb;
-}
+  #nav-search-icon:hover {
+    background-color: #cacacb;
+  }
 
-.search-icon-container {
-  background-color: transparent;
-  padding: 0;
-  width: auto;
-  height: auto;
-}
+  .search-icon-container {
+    background-color: transparent;
+    padding: 0;
+    width: auto;
+    height: auto;
+  }
 }
 
 @media (max-width: 768px) {
-.burger-menu {
-  display: flex;
-}
-.burger-menu:hover {
-  background-color: #cacacb;
-  padding: 6px;
-  border-radius: 50%;}
+  .burger-menu {
+    display: flex;
+  }
+  .burger-menu:hover {
+    background-color: #cacacb;
+    padding: 6px;
+    border-radius: 50%;
+  }
 }
