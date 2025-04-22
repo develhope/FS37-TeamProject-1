@@ -6,5 +6,164 @@
     <title>Design System Nike Site</title>
     <link rel="stylesheet" href="../style.css" />
   </head>
-  <body></body>
+
+  <body>
+    <!-- Opzionale: navbar per richiamo agevole delle sections -->
+    <header>
+      <h1>DESIGN SYSTEM</h1>
+      <nav>
+        <ul>
+          <li><a href="#logos">Logos</a></li>
+          <li><a href="#icons">Icons</a></li>
+          <li><a href="#brand-colors">Brand colors</a></li>
+          <li><a href="#typography">Typography</a></li>
+          <li><a href="#form-fields">Form fields</a></li>
+          <li><a href="#button-styles">Button styles</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Inserire tag img o svg relative al logo -->
+      <section id="logos" class="logos">
+        <h2>Logos</h2>
+        <img
+          src="/assets/logo/logo-trasparente.png"
+          alt="Nike Logo"
+          class="nike-logo"
+        />
+        <img
+          src="/assets/logo/logo-bianco.png"
+          alt="Nike Logo"
+          class="nike-logo"
+        />
+        <img
+          src="/assets/logo/logo-black.png"
+          alt="Nike Logo"
+          class="nike-logo"
+        />
+      </section>
+
+      <!-- Inserire tag img o svg relative alle icone -->
+      <section id="icons" class="icons">
+        <h2>Icons</h2>
+        <img
+          src="/assets/favicon/favicon.ico"
+          alt="Nike Icons"
+          class="nike-icons"
+        />
+        <img
+          src="/assets/svg/carrello.svg"
+          alt="Nike Icons"
+          class="nike-icons"
+        />
+        <img
+          src="/assets/svg/converse.svg"
+          alt="Nike Icons"
+          class="nike-icons"
+        />
+        <img src="/assets/svg/cuore.svg" alt="Nike Icons" class="nike-icons" />
+        <img
+          src="/assets/svg/freccia-destra.svg"
+          alt="Nike Icons"
+          class="nike-icons"
+        />
+        <img
+          src="/assets/svg/freccia-sinistra.svg"
+          alt="Nike Icons"
+          class="nike-icons"
+        />
+        <img
+          src="/assets/svg/freccia-giu.svg"
+          alt="Nike Icons"
+          class="nike-icons"
+        />
+        <img src="/assets/svg/image.svg" alt="Nike Icons" class="nike-icons" />
+        <img
+          src="/assets/svg/internet.svg"
+          alt="Nike Icons"
+          class="nike-icons"
+        />
+        <img src="/assets/svg/lente.svg" alt="Nike Icons" class="nike-icons" />
+        <img
+          src="/assets/svg/logo-nike-grande.svg"
+          alt="Nike Icons"
+          class="nike-icons"
+        />
+        <img
+          src="/assets/svg/logo-nike.svg"
+          alt="Nike Icons"
+          class="nike-icons"
+        />
+        <img src="/assets/svg/mappe.svg" alt="Nike Icons" class="nike-icons" />
+        <img
+          src="/assets/svg/messaggi.svg"
+          alt="Nike Icons"
+          class="nike-icons"
+          width="24px"
+        />
+        <img src="/assets/svg/nba.svg" alt="Nike Icons" class="nike-icons" />
+        <img src="/assets/svg/x.svg" alt="Nike Icons" class="nike-icons" />
+      </section>
+
+      <!-- Inserire i colori del brand come in una palette: campo colore con al centro codice hex relativo. Impostare variabili in :root e richiamarle nei rispettivi div -->
+      <section id="brand-colors" class="brand-colors">
+        <h2>Brand Colors</h2>
+        <div class="color-swatch primary-color">#hexcode1</div>
+        <div class="color-swatch secondary-color">#hexcode2</div>
+        <div class="color-swatch text-color">#hexcode3</div>
+        <div class="color-swatch field-color">#hexcode4</div>
+      </section>
+
+      <!-- Inserire qui esempi di tipografia -->
+      <section id="typography" class="typography">
+        <h2>Typography</h2>
+        <div class="typography-example">
+          <h3>Titolo di esempio con stile Nike</h3>
+          <p>Paragrafo di esempio con stile Nike</p>
+          <a href="#">Link di esempio con stile Nike</a>
+        </div>
+      </section>
+
+      <!-- Inserire qui un esempio di form stile Nike -->
+      <section id="form-fields" class="form-fields">
+        <h2>Form Fields</h2>
+        <label for="email">Enter your email to join us or sign in.</label>
+        <input type="email" id="email" placeholder="email@esempio.com" />
+
+        <!-- Menù a tendina di selezione categoria nel form -->
+        <label for="select">Genere</label>
+        <select id="select">
+          <option>Uomo</option>
+          <option>Donna</option>
+          <option>Unisex</option>
+        </select>
+      </section>
+
+      <!-- Inserire stilizzazione dei tipi di bottoni principali -->
+      <section id="button-styles" class="button-styles">
+        <h2>Button Styles</h2>
+        <div class="pulsanti">
+          <h2>Pulsanti direzionali</h2>
+          <div class="frecce">
+            <img
+              src="/assets/svg/freccia-sinistra.svg"
+              alt="freccia indietro"
+            />
+          </div>
+          <div class="frecce">
+            <img src="/assets/svg/freccia-destra.svg" alt="freccia avanti" />
+          </div>
+        </div>
+        <button class="button button-primary">Shop Now</button>
+        <button class="button button-secondary">Scopri di più</button>
+        <button class="button button-disabled" disabled>Non disponibile</button>
+      </section>
+    </main>
+
+    <footer>
+      <p>Design System Nike Versione 1.0.1</p>
+      <p>Aggiornato il: 22 Aprile 2025</p>
+    </footer>
+  </body>
 </html>

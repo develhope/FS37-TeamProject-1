@@ -34,7 +34,7 @@ justify-content: flex-start;
 } */
 .pulsanti {
   display: flex;
-  justify-content: flex-end;
+  justify-content: start;
   gap: 10px;
   padding: 2px 24px 0px;
   margin: 0px 0px 12px;
@@ -54,10 +54,9 @@ justify-content: flex-start;
 .frecce:hover {
   background-color: var(--color-hover-btn);
 }
-/* .frecce:active-view-transition {
-  border: 2px;
-  border-color: blue;
-} */
+.frecce:active {
+  border: 1px solid blue;
+}
 @font-face {
   font-family: "Nike Futura ND";
   src: url("https://db.onlinewebfonts.com/t/a8d7b985e4eb8c5d34f2302ffe83e917.eot");
