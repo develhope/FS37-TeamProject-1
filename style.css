@@ -33,6 +33,15 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    background-color: #cae5f2;
+    padding: 6px;
+    border-radius: 8px;
+    max-width: max-content;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+.brand-colors h2{
+    padding: 3px;
+    margin: 0;
 }
 .brand-colors div{
 display: flex;
@@ -43,5 +52,27 @@ gap: 0.5rem;
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: chocolate;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+.primary-color .circle{
+    background-color: var(--color-white);
+}
+
+.secondary-color .circle{
+    background-color: var(--color-black);
+} 
+
+.text-color .circle{
+    background-color: var(--color-text-footer);
+}
+
+.input-color .circle{
+    background-color: var(--color-light-grey);
+} 
+
+.carosel-color .circle{
+    background-color: var(--color-grey);
+}
+.carosel-color{
+    padding-bottom: 3px;
 }
