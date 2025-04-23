@@ -1,0 +1,61 @@
+:root {
+  
+  --color-white:#FFFFFF; /*background e testi su sfondi scuri  */
+  --color-black: #111111; /*usato su testi anche per hover testo */
+  --color-light-grey: #F5F5F5; /* top bar, input */
+  --color-grey: #e5e5e5; /*button carosello  */
+  --color-disabled-btn: #9e9ea0; /* button carosello */
+  --color-hover-btn: #CACACB; /* button */
+  --color-text-footer: #707072;
+
+
+}
+
+.brand-colors{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: #dedddd;
+  padding: 6px;
+  border-radius: 8px;
+  max-width: max-content;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+.brand-colors h2{
+  padding: 3px;
+  margin: 0;
+}
+.brand-colors div{
+display: flex;
+align-items: center;
+gap: 0.5rem;
+}
+.circle{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+.primary-color .circle{
+  background-color: var(--color-white);
+}
+
+.secondary-color .circle{
+  background-color: var(--color-black);
+} 
+
+.text-color .circle{
+  background-color: var(--color-text-footer);
+}
+
+.input-color .circle{
+  background-color: var(--color-light-grey);
+} 
+
+.carosel-color .circle{
+  background-color: var(--color-grey);
+}
+.carosel-color{
+  padding-bottom: 3px;
+}
+
