@@ -64,8 +64,16 @@ button {
 .area-button {
     position: absolute;
     bottom: 4.5em;
-    padding: 0.5em;;
-    margin-left: 1.2em;
+    padding: 0.5em;
+    width: 100%;
+    height: auto;  
+}
+
+.area-button p {
+    font-family: var(--font-family);
+    font-weight: bold;
+    color: white;
+    margin-left: 1.5em;
 }
 
 .area-button a {
@@ -79,6 +87,15 @@ button {
     overflow: hidden;
     border-radius: 30px;
     padding: 10px;
+    font-family: var(--font-family);
+    font-weight: var(--font-weight); 
+    color: black;
+    font-weight: bold;
+    margin-left: 1.5em;
+}
+
+.area-button a:hover {
+    background-color: var(--color-hover-btn);
 }
 
 .article1 {
