@@ -31,20 +31,6 @@
   --font-nike: "Nike Futura ND", "Helvetica Now Text Medium", Helvetica, Arial,
     sans-serif;
 }
-/* @font-face {
-  font-family: "Nike Futura ND";
-  src: url("https://db.onlinewebfonts.com/t/a8d7b985e4eb8c5d34f2302ffe83e917.eot");
-  src: url("https://db.onlinewebfonts.com/t/a8d7b985e4eb8c5d34f2302ffe83e917.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/a8d7b985e4eb8c5d34f2302ffe83e917.woff2")
-      format("woff2"),
-    url("https://db.onlinewebfonts.com/t/a8d7b985e4eb8c5d34f2302ffe83e917.woff")
-      format("woff"),
-    url("https://db.onlinewebfonts.com/t/a8d7b985e4eb8c5d34f2302ffe83e917.ttf")
-      format("truetype"),
-    url("https://db.onlinewebfonts.com/t/a8d7b985e4eb8c5d34f2302ffe83e917.svg#Nike Futura ND")
-      format("svg");
-} */
 
 @font-face {
   font-family: "Nike Futura ND";
@@ -79,6 +65,7 @@ body {
 }
 
 /* Contenitore icona + input */
+
 .search-icon-container {
   display: flex;
   align-items: center;
@@ -173,12 +160,6 @@ body {
     background-color: #cacacb;
   }
 
-  .search-icon-container {
-    background-color: transparent;
-    padding: 0;
-    width: auto;
-    height: auto;
-  }
 }
 
 @media (max-width: 768px) {
@@ -308,4 +289,52 @@ button {
 .article4 {
   grid-area: article4;
   position: relative;
+}
+
+.brand-colors {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: #dedddd;
+  padding: 6px;
+  border-radius: 8px;
+  max-width: max-content;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+.brand-colors h2 {
+  padding: 3px;
+  margin: 0;
+}
+.brand-colors div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+.primary-color .circle {
+  background-color: var(--color-white);
+}
+
+.secondary-color .circle {
+  background-color: var(--color-black);
+}
+
+.text-color .circle {
+  background-color: var(--color-text-footer);
+}
+
+.input-color .circle {
+  background-color: var(--color-light-grey);
+}
+
+.carosel-color .circle {
+  background-color: var(--color-grey);
+}
+.carosel-color {
+  padding-bottom: 3px;
 }
