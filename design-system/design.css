@@ -1,0 +1,122 @@
+:root {
+    --font-weight: 500;
+    --font-interline: 1.5;
+    --font-family: 'Helvetica Now Text Medium', Helvetica, Arial, sans-serif;
+    --font-nike: 'Nike Futura ND', 'Helvetica Now Text Medium', Helvetica, Arial, sans-serif;
+    
+    --color-white:#FFFFFF; /*background e testi su sfondi scuri  */
+    --color-black: #111111; /*usato su testi anche per hover testo */
+    --color-light-grey: #F5F5F5; /* top bar, input */
+    --color-grey: #e5e5e5; /*button carosello  */
+    --color-disabled-btn: #9e9ea0; /* button carosello */
+    --color-hover-btn: #CACACB; /* button */
+    --color-text-footer: #707072;
+}
+
+button {
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-left: 16px;
+    margin-right: 16px;
+    min-height: 34px;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+}
+
+@font-face {
+    font-family: "Nike Futura ND";
+    src: url("https://db.onlinewebfonts.com/t/a8d7b985e4eb8c5d34f2302ffe83e917.eot");
+    src: url("https://db.onlinewebfonts.com/t/a8d7b985e4eb8c5d34f2302ffe83e917.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/a8d7b985e4eb8c5d34f2302ffe83e917.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/a8d7b985e4eb8c5d34f2302ffe83e917.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/a8d7b985e4eb8c5d34f2302ffe83e917.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/a8d7b985e4eb8c5d34f2302ffe83e917.svg#Nike Futura ND")format("svg");
+}
+
+
+/*-----------------------------------------------------------*/
+
+.article-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 2fr;
+    grid-template-areas: 
+        "article1 article2"
+        "article3 article4";
+    gap: 15px;
+    padding: 10px;    
+}
+
+.article-container div > img {
+    width: 100%;   
+}
+
+.area-button {
+    position: absolute;
+    bottom: 4.5em;
+    padding: 0.5em;
+    width: 100%;
+    height: auto;  
+}
+
+.area-button p {
+    font-family: var(--font-family);
+    font-weight: bold;
+    color: white;
+    margin-left: 1.5em;
+}
+
+.area-button a {
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 30px;
+    padding: 10px;
+    font-family: var(--font-family);
+    font-weight: var(--font-weight); 
+    color: black;
+    font-weight: bold;
+    margin-left: 1.5em;
+}
+
+.area-button a:hover {
+    background-color: var(--color-hover-btn);
+}
+
+.article1 {
+    grid-area: article1;
+    position: relative;
+}
+
+.article2 {
+    grid-area: article2;
+    position: relative;  
+}
+
+.article3 {
+    grid-area: article3;
+    position: relative;  
+}
+
+.article4 {
+    grid-area: article4;
+    position: relative;   
+}
+
+
+
