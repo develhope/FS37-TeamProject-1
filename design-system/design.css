@@ -54,6 +54,25 @@ body {
   box-sizing: border-box;
 }
 
+button {
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  margin-left: 16px;
+  margin-right: 16px;
+  min-height: 34px;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+}
 /* Container orizzontale */
 .button-header-container {
   display: flex;
@@ -85,6 +104,7 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  margin-left: 0;
   margin-right: 8px;
   color: #111;
 }
@@ -159,10 +179,7 @@ body {
   #nav-search-icon:hover {
     background-color: #cacacb;
   }
-
 }
-
-
 
 .pulsanti {
   display: flex;
@@ -188,26 +205,6 @@ body {
 }
 .frecce:active {
   border: 1px solid blue;
-}
-
-button {
-  text-align: center;
-  text-decoration: none;
-  box-sizing: border-box;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  cursor: pointer;
-  margin-top: 6px;
-  margin-bottom: 6px;
-  margin-left: 16px;
-  margin-right: 16px;
-  min-height: 34px;
-  position: relative;
-  overflow: hidden;
-  border: none;
-  border-radius: 30px;
-  outline: none;
 }
 
 .article-container {
@@ -329,8 +326,7 @@ button {
 }
 .carosel-color {
   padding-bottom: 3px;
-} 
-
+}
 
 @media (max-width: 768px) {
   .burger-menu {
