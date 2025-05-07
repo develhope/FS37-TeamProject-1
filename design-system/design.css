@@ -28,8 +28,6 @@
   --font-weight: 500;
   --font-interline: 1.5;
   --font-family: "Helvetica Now Text Medium", Helvetica, Arial, sans-serif;
-  --font-nike: "Nike Futura ND", "Helvetica Now Text Medium", Helvetica, Arial,
-    sans-serif;
 }
 
 @font-face {
@@ -89,6 +87,7 @@ nav a:hover {
 } 
 
 .area{
+  padding: 10px;
   display: flex;
   justify-content: space-around;
  
@@ -107,13 +106,38 @@ button {
   margin-bottom: 6px;
   margin-left: 16px;
   margin-right: 16px;
-  min-height: 34px;
+  min-height: 36px;
   position: relative;
   overflow: hidden;
   border: none;
   border-radius: 30px;
   outline: none;
+} 
+
+.typography h3{
+  font: var(--font-nike);
+  margin-bottom: 0;
+  margin-top: 1rem;
+  padding: 0;
+} 
+.typography-example p{
+  font: var(--font-family);
+} 
+.typography-example a{
+  font: var(--font-family);
+  text-decoration: none;
+  color: var(--color-text-footer);
+} 
+#hover{
+  color: var(--color-black);
 }
+.typography-example a:hover{
+  color: var(--color-black);
+} 
+.area-3{
+  margin-left: 50px;
+}
+
 /* Container orizzontale */
 .button-header-container {
   display: flex;
@@ -122,6 +146,18 @@ button {
   gap: 20px;
   padding: 16px;
   height: 25px;
+}
+
+.button-styles {
+  display: flex;
+  flex-direction: column;
+
+}
+.button-styles button{
+    min-width: 90px; 
+}
+.button-secondary{
+  background-color:var(--color-hover-btn);
 }
 
 /* Contenitore icona + input */
@@ -223,6 +259,18 @@ button {
   border-radius: 50%;
 }
 
+.button-header-container-2 #nav-search-icon{
+  background-color: #9e9ea0;
+}
+.button-header-container-2 .search-icon-container{
+  background-color:var(--color-hover-btn);
+}
+.button-header-container-2 .preferiti,
+.button-header-container-2 .carrello{
+  background-color:var(--color-hover-btn);
+  border-radius: 50%;
+}
+
 .preferiti svg,
 .carrello svg {
   width: 24px;
@@ -259,12 +307,14 @@ button {
 .pulsanti {
   display: flex;
   justify-content: start;
+  flex-direction: column;
   gap: 10px;
   padding: 2px 24px 0px;
   margin: 0px 0px 12px;
 }
 .frecce {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: var(--color-light-grey);
@@ -281,16 +331,18 @@ button {
 .frecce:active {
   border: 1px solid blue;
 }
-
+.pulsanti-hover .frecce{
+  background-color: var(--color-hover-btn);
+}
 .article-container {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 2fr 2fr;
   grid-template-areas:
     "article1 article2"
     "article3 article4";
-  gap: 15px;
-  padding: 10px;
+  gap: 15px; */
+  padding: 0 10px 10px 10px ;
 }
 
 .article-container div > img {
@@ -336,21 +388,6 @@ button {
 
 .article1 {
   grid-area: article1;
-  position: relative;
-}
-
-.article2 {
-  grid-area: article2;
-  position: relative;
-}
-
-.article3 {
-  grid-area: article3;
-  position: relative;
-}
-
-.article4 {
-  grid-area: article4;
   position: relative;
 }
 
@@ -411,6 +448,9 @@ button {
   background-color: var(--color-light-gray);
   color: var(--color-gray);
   font-size: 0.875rem;
+}
+footer p{
+  margin-bottom: 0;
 }
 
 @media (max-width: 768px) {
