@@ -432,36 +432,6 @@ button {
 }
 
 /* BRAND COLORS */
-.brand-colors {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  background-color: var(--color-white);
-  padding: 6px;
-  border-radius: 8px;
-  max-width: max-content;
-  
-}
-.brand-colors h2 {
-  display: flex;
-  padding: 10px;
-  margin: 0;
-  align-self: center;
-}
-.brand-colors div {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem;
-  font-weight: bold;
-}
-
-.brand-colors div p {
-  margin-left: auto;
-  text-align: left;
-  font-weight: lighter;
-  
-}
 
 .brand-colors {
   display: flex;
