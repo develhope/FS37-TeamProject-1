@@ -200,7 +200,14 @@ button {
   border-top: 1px solid #707072;
 }
 
-.icons{
+section.icons {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 1rem;
+}
+
+.grid-icons{
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(6, 1fr);
@@ -228,15 +235,8 @@ button {
 }
 
 .icon-dimension {
-  position: relative;
-  width: 40px;
-  height: 40px;
-}
-
-.icon-dimension:first-of-type {
-  grid-column: 3;
-  grid-row: 2;
-  z-index: 1;                /* per star “sopra” eventuali sovrapposizioni */
+display: grid;
+grid-template-columns: repeat(2, 1fr);
 }
 
 .nike-icons {
@@ -247,10 +247,11 @@ button {
 
 .icon-width,
 .icon-length {
-  position: absolute;
+  align-self: center;
+  justify-items: center;
   font-size: 0.75rem;
   color: #444;
-
+  text-align: center;
 }
 
 .logos,
