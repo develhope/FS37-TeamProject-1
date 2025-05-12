@@ -42,12 +42,12 @@
       format("svg");
 }
 
+/*Footer*/
 .nike-footer {
   border-top: 1px solid #ddd;
-  font-family: var(--font-footer);
+  font: var(--font-footer);
   padding: 40px 60px;
   background-color: var(--color-white);
-  font-size: 14px;
   color: var(--color-black);
 }
 
@@ -108,7 +108,8 @@
 }
 
 .footer-links li a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: var(--color-black);
 }
 
 .country-selector {
