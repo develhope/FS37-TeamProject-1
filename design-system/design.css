@@ -191,6 +191,7 @@ button {
   flex-direction: column;
   gap: 1.5 rem;
   justify-items: center;
+  padding: 4rem;
 }
 
 .logos p {
@@ -205,13 +206,14 @@ display: flex;
 flex-direction: column;
 align-items: center;
 gap: 1rem;
+padding: 4rem;
 }
 
 .grid-icons{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  gap: 0.5rem;
+  gap: 1.4rem;
 
 }
 
@@ -271,7 +273,7 @@ grid-template-columns: repeat(2, 1fr);
 
 .logos,
 .icons,
-.brand-colors{
+.brand-colors {
   display: grid;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
@@ -452,30 +454,22 @@ grid-template-columns: repeat(2, 1fr);
 .brand-colors {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1.5rem;
   background-color: var(--color-white);
-  padding: 6px;
-  border-radius: 8px;
-  max-width: max-content;
+  padding: 4rem;
+  border-radius: 8px; 
   
 }
+
 .brand-colors h2 {
   display: flex;
   padding: 10px;
   margin: 0;
   align-self: center;
 }
-.brand-colors div {
-  display: grid;
-  grid-template-columns: auto min-content 1fr;
-  align-items: center;
-  column-gap: 0.75rem;   /* spazio tra pallino, hash e descrizione */
-  padding: 0.5rem;
-  font-weight: bold;
-}
 
 .brand-colors div p {
-  margin: 0;             /* azzera qualsiasi margin-left */
+  margin-top: 1rem;        
   text-align: left;
   font-weight: lighter;
   padding-right: 0.5rem;
@@ -487,13 +481,31 @@ grid-template-columns: repeat(2, 1fr);
   color: var(--color-text, #111);
 }
 
+.swatch {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start; 
+  gap: 1.5rem;                  
+}
+
+
+.color-swatch {
+ flex: 0 0 120px;   
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 .circle {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   border: 1px solid #ccc;
 }
+
 .primary-color .circle {
   background-color: var(--color-white);
 }
