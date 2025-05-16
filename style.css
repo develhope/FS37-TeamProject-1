@@ -166,7 +166,7 @@ button {
   grid-template-columns: repeat(3, 1fr);
   gap: 5px;
   padding: 10px;
-  margin: 0 60px; 
+  margin: 0 60px;
 }
 .article2 img {
   width: 100%;
@@ -236,4 +236,82 @@ button {
 }
 .colonna ul li a:hover {
   text-decoration: underline;
+}
+.pulsanti {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  margin-top: 12px;
+}
+
+.titolo-pulsanti {
+  font-family: var(--font-family);
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.freccie-container {
+  display: flex;
+  gap: 10px;
+}
+
+.frecce {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-light-grey);
+  height: 48px;
+  width: 48px;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: background-color 250ms ease;
+}
+
+.frecce:hover {
+  background-color: var(--color-hover-btn);
+}
+
+.frecce:active {
+  border: 1px solid blue;
+}
+.area-button {
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+  padding: 0.5em;
+  width: auto;
+  height: auto;
+}
+
+
+.area-button p {
+  font-family: var(--font-family);
+  font-weight: bold;
+  color: white;
+  margin: 0 0 0.5em 0;
+}
+
+.area-button a {
+  background-color: white;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 30px;
+  padding: 10px;
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+  color: black;
+  font-weight: bold;
+  margin: 0;
+}
+
+
+.area-button a:hover {
+  background-color: var(--color-hover-btn);
 }
