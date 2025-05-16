@@ -213,26 +213,51 @@ button {
   display: block;
 }
 
+
+/* Modifica alla parte finale del body */
+
+
 /* Sesto container: link in 4 colonne */
+
+.container {
+  max-width: 1200px;      
+  margin: auto;         
+}
+
 .links-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   padding: 20px;
-  background-color: #f8f8f8;
+  font-family: "Helvetica Now Display Medium", Helvetica, Arial, sans-serif;
 }
+
+.colonna {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
 .colonna h3 {
   margin-bottom: 10px;
+  font-size: 1.1rem;
 }
+
 .colonna ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
+
 .colonna ul li {
-  margin-bottom: 5px;
+  margin-top: 6px;
 }
+
 .colonna ul li a {
   text-decoration: none;
-  color: #333;
+  color: gray;
+  font-weight: bold;
 }
 .colonna ul li a:hover {
   text-decoration: underline;
