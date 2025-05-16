@@ -116,11 +116,14 @@ button {
   padding: 0;
   margin: 0;
 }
+.article1{
+  background-image: url("/assets/img/modelli/modelli-16.png");
+  min-height:100vh;
+  min-width: 80vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
 
-/* Immagine singola, a schermo intero */
-.article1 img {
-  width: 100%;
-  display: block;
 }
 
 /* Secondo container: griglia a 3 colonne */
@@ -135,6 +138,8 @@ button {
   width: 100%;
   height: auto;
   display: block;
+  aspect-ratio: 2/3;
+  object-fit: cover;
 }
 
 /* Terzo container: griglia 2x2 */
@@ -149,6 +154,8 @@ button {
   width: 100%;
   height: auto;
   display: block;
+  aspect-ratio: 1/1;
+  object-fit: cover;
 }
 
 /* Quarto container: immagine singola */
@@ -241,11 +248,50 @@ button {
 }
 
 .area-button {
-  position: absolute;
-  bottom: 4.5em;
+  position: relative;
+  bottom: 3.5em;
   padding: 0.5em;
   width: 100%;
   height: auto;
+}
+.area-button1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  bottom: 3.5em;
+  padding: 0.5em;
+  width: 100%;
+  height: auto;
+  gap: 1em;
+}
+.area-button1 p {
+  font-family: var(--font-family);
+  font-weight: bold;
+  color: white;
+  margin-left: 1.5em;
+}
+
+.area-button1 a {
+  background-color: white;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 30px;
+  padding: 10px;
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+  color: black;
+  font-weight: bold;
+  margin-left: 1.5em;
+}
+
+.area-button1 a:hover {
+  background-color: var(--color-hover-btn);
 }
 
 .area-button p {
@@ -275,4 +321,92 @@ button {
 
 .area-button a:hover {
   background-color: var(--color-hover-btn);
+}
+/* Aggiustare la parte responsive*/
+@media (max-width: 1024px) {
+  .article2,
+  .article5 {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 30px;
+  }
+
+  .article3 {
+    grid-template-columns: 1fr;
+    margin: 0 30px;
+  }
+
+  .article4 {
+    margin: 0 30px;
+  }
+
+  .links-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pulsanti {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .area-button {
+    bottom: 2em;
+  }
+}
+
+@media (max-width: 768px) {
+  .article2,
+  .article5 {
+    grid-template-columns: 1fr;
+    margin: 0 16px;
+  }
+
+  .article3,
+  .article4 {
+    margin: 0 16px;
+  }
+
+  .links-grid {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  .pulsanti {
+    flex-direction: column;
+    padding: 12px;
+  }
+
+  .area-button {
+    bottom: 1.5em;
+    padding: 1em;
+  }
+
+  .titolo-pulsanti {
+    font-size: 0.875rem;
+  }
+
+  .freccie-container {
+    flex-direction: row;
+  }
+
+  .frecce {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .article1 {
+    min-height: 40vh;
+  }
+
+  .area-button p {
+    font-size: 0.875rem;
+    margin-left: 1em;
+  }
+
+  .area-button a {
+    font-size: 0.875rem;
+    padding: 8px;
+    margin-left: 1em;
+  }
 }
