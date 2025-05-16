@@ -117,6 +117,11 @@
   color: var(--color-black);
 }
 
+.footer-links li a:visited, .footer-column li a:visited  {
+  text-decoration: none;
+  color: var(--color-black);
+}
+
 .country-selector {
   font: var(--color-text-footer);
   color: #707072;
