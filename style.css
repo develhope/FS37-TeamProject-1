@@ -74,7 +74,7 @@ body {
   font-weight: bold;
   background-color: var(--color-white);
   color: var(--color-black);
-  transition: background-color 250ms ease;
+  transition: background-color 200ms ease;
 }
 
 .btn:hover {
@@ -84,6 +84,8 @@ body {
 /* Article container principale */
 .article-container {
   width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 /* Primo container */
@@ -141,7 +143,7 @@ body {
   font-weight: bold;
   color: black;
   display: inline-block;
-  transition: background-color 250ms ease;
+  transition: background-color 200ms ease;
 }
 
 .area-button1 a:hover {
@@ -152,8 +154,8 @@ body {
 .article2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  padding: 20px;
+  gap: 6px;
+  padding: 12px;
   margin: 0 auto;
   max-width: 1400px;
 }
@@ -164,7 +166,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 4px;
+  border-radius: 0;
   overflow: hidden;
 }
 
@@ -172,8 +174,8 @@ body {
 .article3 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-  padding: 20px;
+  gap: 6px;
+  padding: 12px;
   margin: 0 auto;
   max-width: 1400px;
 }
@@ -184,21 +186,21 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 4px;
+  border-radius: 0;
   overflow: hidden;
 }
 
 /* Quarto container */
 .article4 {
   position: relative;
-  padding: 20px;
+  padding: 12px;
   margin: 0 auto;
   max-width: 1400px;
   background-image: url("/assets/img/modelli/modelli-8.jpg");
   background-size: cover;
   background-position: center;
   height: 60vh;
-  border-radius: 4px;
+  border-radius: 0;
   overflow: hidden;
 }
 
@@ -207,7 +209,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 12px;
   margin: 0 auto;
   max-width: 1400px;
 }
@@ -233,11 +235,12 @@ body {
   width: 48px;
   border-radius: 24px;
   cursor: pointer;
-  transition: background-color 250ms ease;
+  transition: all 200ms ease;
 }
 
 .frecce:hover {
   background-color: var(--color-hover-btn);
+  transform: scale(1.1);
 }
 
 .frecce:active {
@@ -265,12 +268,11 @@ body {
   background-color: #f8f8f8;
 }
 
-
 .area-button {
   position: absolute;
-  bottom: 20px;
+  bottom: 12px;
   left: 0;
-  padding: 0.8em;
+  padding: 0.5em;
   width: 100%;
 }
 
@@ -286,15 +288,140 @@ body {
   background-color: white;
   text-decoration: none;
   border-radius: 30px;
-  padding: 10px 20px;
-  font-weight: bold;
+  padding: 8px 16px;
+  font-weight: 500;
   color: black;
   display: inline-block;
-  transition: background-color 250ms ease;
+  transition: all 200ms ease;
+  font-size: 0.875rem;
 }
 
 .area-button a:hover {
   background-color: var(--color-hover-btn);
+  transform: scale(1.1);
+}
+
+.carousel__content {
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.scarpa-item {
+  min-height: 250px;
+}
+
+.carousel__slide {
+  padding: 0 10px;
+}
+
+/* Container principale del carosello */
+.carousel-section {
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Carosello */
+.carousel {
+  position: relative;
+  padding: 0 12px;
+  margin-top: 12px;
+}
+
+.carousel__viewport {
+  overflow: hidden;
+}
+
+.carousel__slides {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  /* Nascondi la scrollbar */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.carousel__slides::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel__slide {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+}
+
+.carousel__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+}
+
+.scarpa-item,
+.scarpa-item-placeholder {
+  position: relative;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 380px;
+  border-radius: 0;
+  overflow: hidden;
+  background-color: #f5f5f5;
+  aspect-ratio: 1/1;
+}
+
+.scarpa-item-placeholder {
+  visibility: hidden;
+}
+
+/* Navigazione con frecce */
+.freccia-prev,
+.freccia-next {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Stati delle frecce basati sulla slide attiva */
+.carousel__slide:target ~ * {
+  scroll-behavior: smooth;
+}
+
+/* Disabilita freccia sinistra nella prima slide */
+#slide-1:target ~ .carousel-section .freccia-prev,
+.carousel-section:not(:has(.carousel__slide:target)) .freccia-prev {
+  background-color: var(--color-disabled-btn);
+  cursor: not-allowed;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* Disabilita freccia destra nell'ultima slide */
+#slide-3:target ~ .carousel-section .freccia-next {
+  background-color: var(--color-disabled-btn);
+  cursor: not-allowed;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* Link dinamici per le frecce */
+#slide-1:target ~ .carousel-section .freccia-next,
+.carousel-section:not(:has(.carousel__slide:target)) .freccia-next {
+  pointer-events: auto;
+}
+
+#slide-2:target ~ .carousel-section .freccia-prev,
+#slide-2:target ~ .carousel-section .freccia-next {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+#slide-3:target ~ .carousel-section .freccia-prev {
+  pointer-events: auto;
+  opacity: 1;
 }
 
 /* Tablet */
@@ -318,27 +445,32 @@ body {
   .article2,
   .article5 {
     grid-template-columns: repeat(2, 1fr);
-    padding: 15px;
-    gap: 8px;
+    padding: 8px;
+    gap: 6px;
   }
 
   .article3 {
     grid-template-columns: repeat(2, 1fr);
-    padding: 15px;
-    gap: 8px;
+    padding: 8px;
+    gap: 6px;
   }
 
   .article4 {
     height: 50vh;
-    padding: 15px;
+    padding: 8px;
   }
 
   .pulsanti {
-    padding: 15px;
+    padding: 8px;
   }
 
   .titolo-pulsanti {
     font-size: 1.3rem;
+  }
+
+  .carousel__content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
   }
 }
 
@@ -376,8 +508,8 @@ body {
   .article3,
   .article5 {
     grid-template-columns: 1fr;
-    padding: 10px;
-    gap: 15px;
+    padding: 6px;
+    gap: 12px;
   }
 
   .article2 > div,
@@ -388,13 +520,13 @@ body {
 
   .article4 {
     height: 40vh;
-    padding: 10px;
+    padding: 6px;
   }
 
   .pulsanti {
     flex-direction: column;
-    gap: 15px;
-    padding: 15px 10px;
+    gap: 12px;
+    padding: 12px 6px;
     align-items: flex-start;
   }
 
