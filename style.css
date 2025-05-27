@@ -249,7 +249,7 @@ svg {
   }
 
   .footer-column:not(.footer-language) h4::after {
-    content: url('assets\svg\freccia-giu.svg');
+    content: url('assets/svg/freccia-giu.svg');
     position: absolute;
     right: 0;
     top: 50%;
