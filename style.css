@@ -42,31 +42,35 @@
       format("svg");
 }
 
-/*Footer*/
-.nike-footer {
-  border-top: 1px solid #ddd;
-  font: var(--font-footer);
-  padding: 40px 60px;
+
+/* css/footer.css */
+.footer {
   background-color: var(--color-white);
+  font: var(--font-footer);
+  cursor: pointer;
+  color: var(--color-text-footer);
 }
 
-.footer-columns {
+/* ======= TOP ======= */
+.footer-top {
+  padding: 1.75rem  1.25rem 2.5rem;
+}
+
+.footer-nav {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 30px;
-  flex-wrap: wrap;
-  justify-items: flex-start;
+  max-width: 75rem;
+  margin: 0 auto;
 }
-
 .footer-column {
   flex: 1;
-  min-width: 220px;
-  margin-right: 40px;
+  border-top: 0.1rem solid var(--color-grey);
+  padding-top: 2.5rem;
 }
-
 .footer-column h4 {
-  font-size: 14px;
-  margin-bottom: 12px;
+  margin-bottom: 2.5rem;
+  /* font-size: 16px; */
+  color: var(--color-black);
+  font: var(--font-footer);
   font-weight: bold;
   cursor: pointer;
 }
@@ -76,67 +80,228 @@
   padding: 0;
   margin: 0;
 }
-
 .footer-column ul li {
-  margin-bottom: 8px;
+  margin-bottom: 0.75rem;
 }
-
 .footer-column ul li a {
+  font-size: 14px;
+  color: var(--color-text-footer);
   text-decoration: none;
-  font: var(--color-text-footer);
 }
 
-.footer-bottom {
+/* selettore lingua */
+.footer-language {
+  display: flex;
+  justify-content: flex-end;
+  align-items: start;
+}
+.language-selector {
+  background: none;
+  border: none;
   font: var(--font-footer);
-  padding-top: 20px;
+  cursor: pointer;
   display: flex;
-  flex-direction: row;
-  gap: 10px;
-}
-
-.footer-links {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 16px;
-  row-gap: 12px;
-  position: static;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-links li a {
-  text-decoration: none;
-  font: var(--font-footer);
-  color: inherit;
-}
-
-.footer-links li a:hover {
-  text-decoration: none;
-  color: var(--color-black);
-}
-
-.footer-links li a:visited, .footer-column li a:visited  {
-  text-decoration: none;
-  color: var(--color-black);
-}
-
-.country-selector {
-  font: var(--color-text-footer);
-  color: #707072;
-  flex: 1;
-  display: flex;
-  flex-direction: row;
   align-items: center;
-  align-self: flex-start;
-  text-rendering: auto;
+  color: var(--color-text-footer);
+
+}
+.language-selector svg {
+  font-size: 18px;
+  margin-right: 0.5rem;
+  line-height: 1;
 }
 
 svg {
+    width: 1rem;
+    height: 1rem;
+}
+
+/* ======= BOTTOM ======= */
+
+.footer-bottom-top {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  max-width: 100%;
+  padding-left: 1.25rem;
+}
+
+.footer-bottom-top span {
+  font-size: 14px;
   color: var(--color-text-footer);
-  width: 16px;
-  height: 16px;
+  cursor: text;
+}
+
+.footer-links a {
+  font-size: 14px;
+  color: var(--color-text-footer);
+  text-decoration: none;
+}
+.footer-links a:hover {
+  color: var(--color-black);
+}
+.footer-links .arrow {
+  font-size: 14px;
+  margin-left: 0.25rem;
+  margin-top: 0.25rem;
+}
+
+.footer-links svg {
+    width: 1rem;
+    height: 1rem;
+    vertical-align: middle;
+}
+
+.footer-bottom-top .footer-links {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;   /* spazio tra link e SVG */
+}
+
+.footer-bottom-top a {
+  font-size: 14px;
+  color: var(--color-text-footer);
+  text-decoration: none;
+}
+.footer-bottom-top a:hover {
+  color: var(--color-black);
+}
+
+/*guide dropdown*/
+
+.footer-links .dropdown {
+  position: relative;
+  display: inline-block;    /* per tenere gli altri <a> in linea */
+}
+
+/* di base nascondi il menu */
+.footer-links .dropdown-menu {
+  display: none;
+  position: absolute;
+  bottom: 100%;                /* subito sopra il toggle */
+  left: 0;
+  margin: 4px 0 0;
+  padding: 8px 0;
+  background: var(--color-white);
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  list-style: none;
+  min-width: 180px;
+  z-index: 10;
+}
+
+/* styling dei singoli item */
+.footer-links .dropdown-menu li a {
+  display: block;
+  padding: 8px 16px;
+  font-size: 14px;
+  color: var(--color-black);
+  text-decoration: none;
+}
+.footer-links .dropdown-menu li + li {
+  margin-top: 4px;
+}
+.footer-links .dropdown-menu li a:hover {
+  background-color: var(--color-light-grey);
+}
+
+/* mostra il menu quando si fa hover sul contenitore */
+.footer-links .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+
+/* ======= RESPONSIVE ======= */
+
+
+@media (max-width: 786px) {
+
+  /* 1. Imposta le colonne in pila con bordo tra di esse */
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .footer-column {
+    border-bottom: 1px solid var(--color-grey);
+    padding: 1rem 0;
+  }
+
+  /* 2. Nascondi di default i <ul> solo delle colonne che hanno submenu 
+        (le prime 3, escludendo .footer-language) */
+  .footer-column:not(.footer-language) ul {
+    display: none;
+    margin-top: 0.75rem;
+    padding-left: 0;
+    list-style: none;
+  }
+
+  /* 3. Aggiungo la freccetta al titolo (h4) di ciascuna di queste colonne */
+  .footer-column:not(.footer-language) h4 {
+    position: relative;
+    cursor: pointer;
+    margin: 0;
+    outline: none;/* rimuove il focus ring di default */
+  }
+
+  .footer-column:not(.footer-language) h4::after {
+    content: url('assets\svg\freccia-giu.svg');
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.2s ease;
+    font-size: 14px;
+    color: var(--color-black);
+  }
+
+  /* 4. Al focus sulla colonna, mostra il suo <ul> e ruota la freccia */
+  .footer-column:not(.footer-language) h4:focus + ul  {
+    display: block;
+    padding-top: 1.25rem;
+  }
+  .footer-column:not(.footer-language) h4:focus::after {
+    transform: translateY(-50%) rotate(180deg);
+  }
+
+  /* 5. Footer‐bottom incollato sotto l’ultima colonna */
+.footer-bottom-top .footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 0; 
+    gap: 0.75rem;
+  }
+  
+  .footer-links a,
+  .privacy-settings {
+    font-size: 14px;
+    color: var(--color-text-footer);
+  }
+  .footer-links a:hover,
+  .privacy-settings:hover {
+    color: var(--color-black);
+  }
+
+  .footer-column.footer-language {
+  justify-content: flex-start;
+}
+
+button.language-selector {
+  padding-left: 0;
+}
+
+div.footer-column.footer-language {
+border-bottom: 0.15rem solid var(--color-grey);
+}
+
+div.footer-column:first-child {
+    border-top: 0.15rem solid var(--color-grey);
+}
 }
 
 
