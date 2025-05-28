@@ -53,13 +53,15 @@
     padding: 0px 48px 0px 48px;
 }
 header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   
     
 }
 .button-header-container{
     display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 .nike-icons{
     width: 24px;
@@ -161,7 +163,10 @@ header{
   nav a:hover{
     border-bottom: 2px solid var(--color-black);
   }
-
+  nav {
+    display: flex;
+    align-items: center;
+  }
   .up-link{
     display: flex;
     align-items: center;
@@ -176,6 +181,64 @@ header{
     height: 12px;
     margin: 12px;
 
+  } 
+
+  @media (min-width: 960px) and (max-width: 1200px) {
+    .up-section{
+      display: none;
+    }
+    .search-input {
+    display: none;
+    }
+    .search-icon-container{
+      background-color: var(--color-white);
+      padding: 0;
+      
+    }
+    .search-icon-container:hover {
+    background-color: var(--color-white);
   }
+  
+  #nav-search-icon:hover {
+    background-color: var(--color-hover-btn);
+    padding: 6px;
+    border-radius: 50%;
+  }
+  }
+
+  @media (max-width: 959px) {
+    .up-section{
+      display: none;
+    }
+    .search-input {
+    display: none;
+    }
+    .search-icon-container{
+      background-color: var(--color-white);
+      padding: 0;
+      
+    }
+    .search-icon-container:hover {
+    background-color: var(--color-white);
+  }
+  
+  #nav-search-icon:hover {
+    background-color: var(--color-hover-btn);
+    padding: 6px;
+    border-radius: 50%;
+  }
+    nav {
+      display: none;
+    }
+    .burger-menu {
+    display: flex;
+    color: #111;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  }
+
+   
 
   
