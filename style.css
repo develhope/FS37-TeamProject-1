@@ -491,7 +491,13 @@ body {
     padding: 8px;
     gap: 6px;
   }
-
+  .article2 {
+    grid-template-columns: repeat(3, 1fr);
+    overflow: auto;
+  }
+  .article2 > div {
+    min-width: 500px;
+  }
   .article3 {
     grid-template-columns: repeat(2, 1fr);
     padding: 8px;
@@ -958,7 +964,6 @@ svg {
   background-color: var(--color-light-grey);
   min-height: 36px;
   align-items: center;
-  margin-right: 12px;
   padding-left: 48px;
 }
 .up-section,
@@ -967,7 +972,11 @@ header {
 }
 header {
   display: grid;
+  overflow: hidden;
+  align-content: center;
+  align-self: stretch;
   grid-template-columns: repeat(3, 1fr);
+  max-height: 60px;
 }
 .button-header-container {
   display: flex;
@@ -983,7 +992,7 @@ header {
 }
 
 .nike-logo {
-  width: 80px;
+  width: 60px;
 }
 
 .burger-menu {
@@ -1145,5 +1154,8 @@ nav {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+  }
+  .links-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
