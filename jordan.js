@@ -20,7 +20,7 @@ const jordanProducts = [
   {
     id: 3,
     title: "Air Jordan Camicia da campeggio – Uomo",
-    image: "assets/img/modelli/camicia.png",
+    image: "assets/img/modelli/camicia-1.png",
     price: "109,99 €",
     gender: "Uomo",
     colors: 1,
@@ -93,14 +93,15 @@ const jordanProducts = [
 ];
 
 const grid = document.getElementById("product-grid");
-
+const titleHeader = document.getElementById("title-header");
+titleHeader.innerHTML = `Collezione Jordan (${jordanProducts.length})`
 jordanProducts.forEach(product => {
   const card = document.createElement("div");
   card.className = "card";
 
   card.innerHTML = `
     <div class="card-content">
-      <a><img src="${product.image}" alt="${product.title}"></a>
+      <div id="img"><a><img src="${product.image}" alt="${product.title}"></a></div>
       <h3 class="title">${product.title}</h3>
       <p class="type">${product.gender}</p>
       <p class="colors">${product.colors} color${product.colors > 1 ? "i" : "e"} disponibili</p>
