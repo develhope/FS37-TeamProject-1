@@ -1,95 +1,204 @@
 const jordanProducts = [
   {
-    id: 1,
-    title: "Jordan Jumpman T-shirt a manica corta – Uomo",
-    image: "assets/img/modelli/modelloMagliaUomo.png",
-    price: "29,99 €",
-    gender: "Uomo",
-    colors: 4,
-    link: "https://www.nike.com/it/t/jordan-jumpman-t-shirt-a-manica-corta-uomo-4-colori-29-99-euro",
+    genere: "uomo",
+    img:"assets/img/scarpe/scarpa-12.png",
+    prezzo: 75,
+    scontiEOfferte: "nessuno",
+    colore: "nero",
+    collezioni: "Jordan Editions",
+    altezzaScarpa: "taglio basso",
+    sport: "lifestyle"
   },
   {
-    id: 2,
-    title: "Jordan Sport Maglia a manica corta Dri-FIT – Uomo",
-    image: "assets/img/modelli/jordanAir.png",
-    price: "39,99 €",
-    gender: "Uomo",
-    colors: 6,
-    link: "https://www.nike.com/it/t/jordan-sport-maglia-a-manica-corta-dri-fit-uomo-6-colori-39-99-euro",
+    genere: "donna",
+    img:"assets/img/scarpe/scarpa-12.png",
+    prezzo: 145,
+    scontiEOfferte: "outlet",
+    colore: "blu",
+    collezioni: "Jordan Spizike",
+    altezzaScarpa: "profilo medio",
+    sport: "performance"
   },
   {
-    id: 3,
-    title: "Air Jordan Camicia da campeggio – Uomo",
-    image: "assets/img/modelli/camicia-1.png",
-    price: "109,99 €",
-    gender: "Uomo",
-    colors: 1,
-    link: "https://www.nike.com/it/t/air-jordan-camicia-da-campeggio-uomo-1-colore-109-99-euro",
+    genere: "unisex",
+    img:"assets/img/scarpe/scarpa-12.png",
+    prezzo: 230,
+    scontiEOfferte: "nessuno",
+    colore: "marrone",
+    collezioni: "Jordan Editions",
+    altezzaScarpa: "taglio alto",
+    sport: "basketball"
   },
   {
-    id: 4,
-    title: "Jordan Flight Essentials T-shirt – Uomo",
-    image: "assets/img/modelli/magliaEseentials.png",
-    price: "24,49 €",
-    gender: "Uomo",
-    colors: 1,
-    link: "https://www.nike.com/it/t/jordan-flight-essentials-t-shirt-uomo-1-colore-24-49-euro",
+    kids: "bambina",
+    img:"assets/img/scarpe/scarpa-12.png",
+    prezzo: 52,
+    scontiEOfferte: "outlet",
+    colore: "verde",
+    collezioni: "Jordan Spizike",
+    altezzaScarpa: "taglio basso",
+    sport: "golf"
   },
   {
-    id: 5,
-    title: "Jordan Flight Essentials 85 T-shirt délavé – Uomo",
-    image: "assets/img/modelli/JordanEssential85.png",
-    price: "37,49 €",
-    gender: "Uomo",
-    colors: 1,
-    link: "https://www.nike.com/it/t/jordan-flight-essentials-85-t-shirt-delave-uomo-1-colore-37-49-euro",
+    kids: "bambino",
+    img:"assets/img/scarpe/scarpa-12.png",
+    prezzo: 189,
+    scontiEOfferte: "nessuno",
+    colore: "grigio",
+    collezioni: "Jordan Editions",
+    altezzaScarpa: "profilo medio",
+    sport: "danza"
   },
   {
-    id: 6,
-    title: "Jordan Air T-shirt elasticizzata – Uomo",
-    image: "assets/img/modelli/magliaUomoRed.png",
-    price: "27,99 €",
-    gender: "Uomo",
-    colors: 1,
-    link: "https://www.nike.com/it/t/jordan-air-t-shirt-elasticizzata-uomo-1-colore-27-99-euro",
+    kids: "bambina",
+    img:"assets/img/scarpe/scarpa-12.png",
+    prezzo: 300,
+    scontiEOfferte: "outlet",
+    colore: "arancione",
+    collezioni: "Jordan Spizike",
+    altezzaScarpa: "taglio alto",
+    sport: "lifestyle"
   },
   {
-    id: 7,
-    title: "Jordan T-shirt oversize Summer Bloom – Ragazzo/a",
-    image: "assets/img/modelli/oversizeRagazzo.png",
-    price: "27,99 €",
-    gender: "Ragazzo/a",
-    colors: 2,
-    link: "https://www.nike.com/it/t/jordan-t-shirt-oversize-summer-bloom-ragazzo-a-2-colori-27-99-euro",
+    kids: "bambino",
+    img:"assets/img/scarpe/scarpa-12.png",
+    prezzo: 95,
+    scontiEOfferte: "nessuno",
+    colore: "rosa",
+    collezioni: "Jordan Editions",
+    altezzaScarpa: "profilo medio",
+    sport: "performance"
   },
   {
-    id: 8,
-    title: "Jordan Flight Essentials T-shirt Poolside Jumpman – Ragazzo/a",
-    image: "assets/img/modelli/tshirtRagazzo.png",
-    price: "24,99 €",
-    gender: "Ragazzo/a",
-    colors: 1,
-    link: "https://www.nike.com/it/t/jordan-flight-essentials-t-shirt-poolside-jumpman-ragazzo-a-1-colore-24-99-euro",
+    genere: "donna",
+    img:"assets/img/scarpe/scarpa-12.png",
+    prezzo: 128,
+    scontiEOfferte: "outlet",
+    colore: "viola",
+    collezioni: "Jordan Spizike",
+    altezzaScarpa: "taglio basso",
+    sport: "basketball"
   },
   {
-    id: 9,
-    title:
-      "Chicago Bulls Statement Edition Maglia Jordan Dri-FIT Swingman NBA – Uomo",
-      image: "assets/img/modelli/bulls.png",
-    price: "73,49 €",
-    gender: "Uomo",
-    colors: 1,
-    link: "https://www.nike.com/it/t/chicago-bulls-statement-edition-maglia-jordan-dri-fit-swingman-nba-uomo-1-colore-73-49-euro",
+    genere: "unisex",
+    img:"assets/img/scarpe/scarpa-12.png",
+    prezzo: 215,
+    scontiEOfferte: "nessuno",
+    colore: "rosso",
+    collezioni: "Jordan Editions",
+    altezzaScarpa: "profilo medio",
+    sport: "golf"
   },
   {
-    id: 10,
-    title: "Jordan Jumpman Air T-shirt - Uomo",
-    image: "assets/img/modelli/jordanJumpman.png",
-    price: "24,49 €",
-    gender: "Uomo",
-    colors: 1,
-    link: "https://www.nike.com/it/t/jordan-jumpman-air-t-shirt-uomo-1-colore-24-49-euro",
+    genere: "uomo",
+    img:"assets/img/scarpe/scarpa-12.png",
+    prezzo: 60,
+    scontiEOfferte: "outlet",
+    colore: "bianco",
+    collezioni: "Jordan Spizike",
+    altezzaScarpa: "taglio alto",
+    sport: "danza"
   },
+  {
+    genere: "donna",
+    img:"assets/img/scarpe/scarpa-12.png",
+    prezzo: 179,
+    scontiEOfferte: "nessuno",
+    colore: "giallo",
+    collezioni: "Jordan Editions",
+    altezzaScarpa: "taglio basso",
+    sport: "lifestyle"
+  },
+  {
+    genere: "unisex",
+    img:"assets/img/scarpe/scarpa-12.png",
+    prezzo: 132,
+    scontiEOfferte: "outlet",
+    colore: "nero",
+    collezioni: "Jordan Spizike",
+    altezzaScarpa: "profilo medio",
+    sport: "performance"
+  },
+  {
+    genere: "uomo",
+    img:"assets/img/scarpe/scarpa-12.png",
+    prezzo: 247,
+    scontiEOfferte: "nessuno",
+    colore: "blu",
+    collezioni: "Jordan Editions",
+    altezzaScarpa: "taglio alto",
+    sport: "basketball"
+  },
+  {
+    kids: "bambina",
+    img:"assets/img/scarpe/scarpa-12.png",
+    prezzo: 85,
+    scontiEOfferte: "outlet",
+    colore: "marrone",
+    collezioni: "Jordan Spizike",
+    altezzaScarpa: "taglio basso",
+    sport: "golf"
+  },
+  {
+    kids: "bambino",
+    img:"assets/img/scarpe/scarpa-12.png",
+    prezzo: 158,
+    scontiEOfferte: "nessuno",
+    colore: "verde",
+    collezioni: "Jordan Editions",
+    altezzaScarpa: "profilo medio",
+    sport: "danza"
+  },
+  {
+    genere: "uomo",
+    img:"assets/img/scarpe/scarpa-12.png",
+    prezzo: 99,
+    scontiEOfferte: "outlet",
+    colore: "grigio",
+    collezioni: "Jordan Spizike",
+    altezzaScarpa: "taglio alto",
+    sport: "lifestyle"
+  },
+  {
+    genere: "donna",
+    img:"assets/img/scarpe/scarpa-12.png",
+    prezzo: 212,
+    scontiEOfferte: "nessuno",
+    colore: "arancione",
+    collezioni: "Jordan Editions",
+    altezzaScarpa: "profilo medio",
+    sport: "performance"
+  },
+  {
+    genere: "unisex",
+    img:"assets/img/scarpe/scarpa-12.png",
+    prezzo: 141,
+    scontiEOfferte: "outlet",
+    colore: "rosa",
+    collezioni: "Jordan Spizike",
+    altezzaScarpa: "taglio basso",
+    sport: "basketball"
+  },
+  {
+    genere: "uomo",
+    img:"assets/img/scarpe/scarpa-12.png",
+    prezzo: 68,
+    scontiEOfferte: "nessuno",
+    colore: "viola",
+    collezioni: "Jordan Editions",
+    altezzaScarpa: "profilo medio",
+    sport: "golf"
+  },
+  {
+    genere: "donna",
+    img:"assets/img/scarpe/scarpa-12.png",
+    prezzo: 256,
+    scontiEOfferte: "outlet",
+    colore: "rosso",
+    collezioni: "Jordan Spizike",
+    altezzaScarpa: "taglio alto",
+    sport: "danza"
+  }
 ];
 
 const grid = document.getElementById("product-grid");
@@ -101,11 +210,11 @@ jordanProducts.forEach(product => {
 
   card.innerHTML = `
     <div class="card-content">
-      <div id="img"><a><img src="${product.image}" alt="${product.title}"></a></div>
-      <h3 class="title">${product.title}</h3>
-      <p class="type">${product.gender}</p>
-      <p class="colors">${product.colors} color${product.colors > 1 ? "i" : "e"} disponibili</p>
-      <p class="price">${product.price}</p>
+      <div id="img-products"><a><img src="${product.img}" alt="${product.collezioni}"></a></div>
+      <h3 class="title">${product.collezioni}</h3>
+      <p class="type">${product.genere}</p>
+      <p class="colors">${product.colore} </p>
+      <p class="price">${product.prezzo} €</p>
     </div>
   `;
 

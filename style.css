@@ -1163,7 +1163,6 @@ nav {
 
 /* Jordan Products */
 .title {
-  text-align: center;
   margin-bottom: 20px;
 }
 
@@ -1228,13 +1227,13 @@ nav {
 }
 
 /* div ratio quadrata con maxwidth e maxheight e immagine all'interno con object fit a cover (provare a impostare una height fissa al div)*/
-#img{
+#img-products img{
   aspect-ratio: 1/1;
-  max-height: 488.53px;
+  max-height: 400px;
   object-fit: cover;
 }
 
 .card-content{
-  max-height: 673.53px;
-  max-width: 488.53px;
+  max-height: 600px;
+  max-width: 400px;
 }
