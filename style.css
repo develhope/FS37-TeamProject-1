@@ -1063,6 +1063,201 @@ nav {
   margin: 12px;
 }
 
+
+
+
+/*----------------------------------------------------------------STYLING SIDEBAR ELENA*/
+
+.sidebar {
+  width: 280px;
+  height: 100vh;
+  padding: 16px;
+  box-sizing: border-box;
+  background: #fff;
+  overflow-y: auto;
+}
+
+/* ========== COLLEZIONE JORDAN ========== */
+.collection-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  list-style: none;
+  color: var(--color-black);
+  padding: 0px 24px 5px 20px;
+  margin: 0 0 8px;
+  text-decoration: none;
+  font-size: 14px;
+  align-items: flex-start;
+  
+}
+
+.collection-nav ul li a {
+  color: var(--color-black);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 0px 24px 5px 20px;
+}
+.collection-nav h2 {
+  font-size: 24px;
+  padding: 0px 24px 5px 20px;
+}
+
+.resume {
+  font-size: 24px;
+  padding: 0px 24px 5px 20px;
+  display: flex;
+  align-items: flex-start;
+  
+}
+
+
+/* linea di separazione */
+hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 16px 0;
+}
+
+/* ========== SECTION HEADER (h3) ========== */
+.filter-group {
+  padding: 0px 24px 5px 20px;
+}
+
+.filter-group > :not(h3) {
+  display: none;
+}
+
+/* Quando c’è .open sul <section> mostro il contenuto */
+.filter-group.open > :not(h3) {
+  display: block;
+}
+
+.filter-group h3,
+.sidebar > h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+  position: relative;
+  cursor: pointer;
+}
+
+/* freccina */
+.filter-group h3::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #333;
+  border-bottom: 2px solid #333;
+  transform: translateY(-50%) rotate(45deg);
+  transition: transform 0.2s ease;
+}
+
+/* ========== CONTENUTI ========== */
+.filter-group label,
+.gender-options label {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+.filter-group label input[type='checkbox'],
+.gender-options label input[type='checkbox'] {
+  margin-right: 8px;
+  width: 18px;
+  height: 18px;
+  accent-color: #0071e3;
+}
+
+/* liste generiche (link) */
+.filter-group ul {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0;
+}
+.filter-group ul li {
+  margin: 8px 0;
+}
+.filter-group ul li a {
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+}
+.filter-group ul li a:hover {
+  text-decoration: underline;
+}
+
+/* sezione “Genere” */
+.gender-options {
+  padding: 8px 0;
+}
+
+/* ========== COLOR GRID ========== */
+.filter-group.colors ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.filter-group.colors ul li {
+  text-align: center;
+}
+.filter-group.colors ul li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  font-size: 12px;
+  color: #333;
+}
+.filter-group.colors ul li a::before {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-bottom: 6px;
+}
+
+/* -- definizione dei colori: -- */
+.filter-group.colors ul li.color-nero    a::before { background: #111111; }
+.filter-group.colors ul li.color-blu     a::before { background: #1790C8; }
+.filter-group.colors ul li.color-marrone a::before { background: #825D41; }
+.filter-group.colors ul li.color-verde   a::before { background: #7BBA3C; }
+.filter-group.colors ul li.color-grigio  a::before { background: #808080; }
+.filter-group.colors ul li.color-arancione a::before { background: #F36B26; }
+.filter-group.colors ul li.color-rosa    a::before { background: #F0728F; }
+.filter-group.colors ul li.color-viola   a::before { background: #8D429F; }
+.filter-group.colors ul li.color-rosso   a::before { background: #E7352B; }
+.filter-group.colors ul li.color-bianco  a::before {
+  background: #fff;
+  border: 1px solid #ccc;
+}
+.filter-group.colors ul li.color-giallo  a::before { background: #FED533; }
+
+/* ========== “Mostra meno” per sezioni espandibili ========== */
+.filter-group .show-less {
+  display: block;
+  margin-top: 12px;
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+}
+.filter-group .show-less:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
 @media (min-width: 960px) and (max-width: 1200px) {
   .up-section {
     display: none;

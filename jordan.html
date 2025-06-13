@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collezione Jordan. Nike IT</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Barra superiore -->
+    <section class="up-section">
+      <div class="icons">
+        <img src="assets/svg/image.svg" alt="Nike Icons 1" class="nike-icons" />
+        <img
+          src="assets/svg/converse.svg"
+          alt="Nike Icons 2"
+          class="nike-icons"
+        />
+      </div>
+      <div class="up-link">
+        <a href="#">Trova un negozio</a>
+        <div class="vertical-line"></div>
+        <a href="#">Aiuto</a>
+        <div class="vertical-line"></div>
+        <a href="#"> Unisciti a noi </a>
+        <div class="vertical-line"></div>
+        <a href="#">Accedi</a>
+      </div>
+    </section>
+
+    <!-- Intestazione principale -->
+    <header>
+      <!-- Sezione sinistra (loghi) -->
+      <div class="logos">
+        <img
+          src="../assets/svg/nikelogo.svg"
+          alt="Nike Icons"
+          class="nike-logo"
+        />
+      </div>
+
+      <!-- Menu centrale -->
+      <nav>
+        <a href="/index.html">Novità e in evidenza</a>
+        <a href="#">Uomo</a>
+        <a href="#">Donna</a>
+        <a href="#">Jordan</a>
+      </nav>
+
+      <!-- Sezione destra -->
+      <div class="button-header-container">
+        <div class="search-icon-container">
+          <button aria-label="Cerca" type="button" id="nav-search-icon">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              viewBox="0 0 24 24"
+              role="img"
+              width="24px"
+              height="24px"
+              fill="none"
+            >
+              <path
+                stroke="currentColor"
+                stroke-width="1.5"
+                d="M13.962 16.296a6.716 6.716 0 01-3.462.954 6.728 6.728 0 01-4.773-1.977A6.728 6.728 0 013.75 10.5c0-1.864.755-3.551 1.977-4.773A6.728 6.728 0 0110.5 3.75c1.864 0 3.551.755 4.773 1.977A6.728 6.728 0 0117.25 10.5a6.726 6.726 0 01-.921 3.407c-.517.882-.434 1.988.289 2.711l3.853 3.853"
+              ></path>
+            </svg>
+          </button>
+          <input
+            type="search"
+            class="search-input"
+            placeholder="Cerca"
+            aria-label="Cerca prodotti"
+            inputmode="search"
+          />
+        </div>
+        <a aria-label="Preferiti" class="preferiti" href="#" title="Preferiti"
+          ><svg
+            aria-hidden="true"
+            focusable="false"
+            viewBox="0 0 24 24"
+            role="img"
+            width="24px"
+            height="24px"
+            fill="none"
+          >
+            <path
+              stroke="currentColor"
+              stroke-width="1.5"
+              d="M16.794 3.75c1.324 0 2.568.516 3.504 1.451a4.96 4.96 0 010 7.008L12 20.508l-8.299-8.299a4.96 4.96 0 010-7.007A4.923 4.923 0 017.205 3.75c1.324 0 2.568.516 3.504 1.451l.76.76.531.531.53-.531.76-.76a4.926 4.926 0 013.504-1.451"
+            ></path>
+          </svg>
+        </a>
+
+        <a
+          aria-label="Articoli carrello: 0"
+          class="carrello"
+          href="#"
+          title="Articoli carrello: 0"
+        >
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            viewBox="0 0 24 24"
+            role="img"
+            width="24px"
+            height="24px"
+            fill="none"
+          >
+            <path
+              stroke="currentColor"
+              stroke-width="1.5"
+              d="M8.25 8.25V6a2.25 2.25 0 012.25-2.25h3a2.25 2.25 0 110 4.5H3.75v8.25a3.75 3.75 0 003.75 3.75h9a3.75 3.75 0 003.75-3.75V8.25H17.5"
+            ></path>
+          </svg>
+        </a>
+        <a href="#" class="burger-menu" aria-label="Burger-menu">
+          <svg
+            viewBox="0 0 24 24"
+            width="24"
+            height="24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="4"
+              y="6"
+              width="16"
+              height="2"
+              rx="1"
+              fill="currentColor"
+            ></rect>
+            <rect
+              x="4"
+              y="11"
+              width="16"
+              height="2"
+              rx="1"
+              fill="currentColor"
+            ></rect>
+            <rect
+              x="4"
+              y="16"
+              width="16"
+              height="2"
+              rx="1"
+              fill="currentColor"
+            ></rect>
+          </svg>
+        </a>
+      </div>
+    </header>
+    <main>
+      <!-- Collezione Jordan -->
+      <div class="collection-nav">
+        <ul>
+          <li><a href="#">Jordan /</a></li>
+          <li><a href="#">Scarpe</a></li>
+        </ul>
+        <div class="resume">
+        <h2>Scarpe Air Jordan (<span id="result-count">136</span>)</h2>
+        </div>
+        <ul>
+          <li><a href="#">Taglio basso</a></li>
+          <li><a href="#">Profilo medio</a></li>
+          <li><a href="#">Taglio alto</a></li>
+        </ul>
+      </div>
+      <aside class="sidebar">
+      <div class="filter-group">
+        <h3>Genere</h3>
+        <label>
+          <input type="checkbox" name="genere" value="uomo" />
+          Uomo
+        </label>
+        <label>
+          <input type="checkbox" name="genere" value="donna" />
+          Donna
+        </label>
+        <label>
+          <input type="checkbox" name="genere" value="unisex" />
+          Unisex
+        </label>
+      </div>
+
+      <!-- Kids -->
+      <section class="filter-group">
+        <h3>Kids</h3>
+        <label>
+          <input type="checkbox" name="bambino" value="bambino" />
+          Bambino
+        </label>
+        <label>
+          <input type="checkbox" name="bambina" value="bambina" />
+          Bambina
+        </label>
+      </section>
+
+      <!-- Acquista per prezzo -->
+      <section class="filter-group">
+        <h3>Acquista per prezzo</h3>
+
+        <label>
+          <input type="checkbox" name="price" value="inferiore-a-50" />
+          Inferiore a 50 €
+        </label>
+        <label>
+          <input type="checkbox" name="price" value="50-100" />
+          50 € – 100 €
+        </label>
+        <label>
+          <input type="checkbox" name="price" value="100-150" />
+          100 € – 150 €
+        </label>
+        <label>
+          <input type="checkbox" name="price" value="superiore-a-150" />
+          Superiore a 150 €
+        </label>
+      </section>
+
+      <!-- Sconti e offerte -->
+      <section class="filter-group">
+        <h3>Sconti e offerte</h3>
+        <label>
+          <input type="checkbox" name="sconti" value="outlet" />
+          Outlet
+        </label>
+      </section>
+
+      <!-- Colore -->
+      <section class="filter-group colors">
+        <h3>Colore</h3>
+        <ul>
+          <li class="color-nero"><a href="#">Nero</a></li>
+          <li class="color-blu"><a href="#">Blu</a></li>
+          <li class="color-marrone"><a href="#">Marrone</a></li>
+          <li class="color-verde"><a href="#">Verde</a></li>
+          <li class="color-grigio"><a href="#">Grigio</a></li>
+          <li class="color-arancione"><a href="#">Arancione</a></li>
+          <li class="color-rosa"><a href="#">Rosa</a></li>
+          <li class="color-viola"><a href="#">Viola</a></li>
+          <li class="color-rosso"><a href="#">Rosso</a></li>
+          <li class="color-bianco"><a href="#">Bianco</a></li>
+          <li class="color-giallo"><a href="#">Giallo</a></li>
+        </ul>
+      </section>
+
+      <!-- Collezioni -->
+      <section class="filter-group">
+        <h3>Collezioni</h3>
+        <label>
+          <input type="checkbox" name="collezioni" value="jordan-editions" />
+          Jordan Editions
+        </label>
+        <label>
+          <input type="checkbox" name="collezioni" value="jordan-editions" />
+          Jordan Spizike
+        </label>
+      </section>
+
+      <!-- Altezza scarpa -->
+      <section class="filter-group">
+        <h3>Altezza scarpa</h3>
+        <label>
+          <input type="checkbox" name="altezza-scarpa" value="taglio-basso" />
+          Taglio basso
+        </label>
+        <label>
+          <input type="checkbox" name="altezza-scarpa" value="profilo-medio" />
+          Profilo medio
+        </label>
+        <label>
+          <input type="checkbox" name="altezza-scarpa" value="taglio-alto" />
+          Taglio alto
+        </label>
+      </section>
+      <!-- Sport -->
+      <section class="filter-group">
+        <h3>Sport</h3>
+        <label>
+          <input type="checkbox" name="sport" value="lifestyle" />
+          Lifestyle
+        </label>
+        <label>
+          <input type="checkbox" name="sport" value="performance" />
+          Performance
+        </label>
+        <label>
+          <input type="checkbox" name="sport" value="basketball" />
+          Basketball
+        </label>
+        <label>
+          <input type="checkbox" name="sport" value="golf" />
+          Golf
+        </label>
+        <label>
+          <input type="checkbox" name="sport" value="danza" />
+          Danza
+        </label>
+      </section>
+    </aside>
+
+    </main>
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-nav">
+          <div class="footer-column">
+            <h4 tabindex="0">Risorse</h4>
+            <ul>
+              <li><a href="#">Gift card</a></li>
+              <li><a href="#">Gift card aziendali</a></li>
+              <li><a href="#">Trova un negozio</a></li>
+              <li><a href="#">Nike Journal</a></li>
+              <li><a href="#">Diventa member</a></li>
+              <li><a href="#">Sconto studenti</a></li>
+              <li><a href="#">Feedback</a></li>
+              <li><a href="#">Codici promozionali</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4 tabindex="0">Assistenza</h4>
+            <ul>
+              <li><a href="#">Assistenza</a></li>
+              <li><a href="#">Stato ordine</a></li>
+              <li><a href="#">Spedizione e consegna</a></li>
+              <li><a href="#">Resi</a></li>
+              <li><a href="#">Opzioni di pagamento</a></li>
+              <li><a href="#">Contattaci</a></li>
+              <li><a href="#">Recensioni</a></li>
+              <li><a href="#">Assistenza Codici promozionali Nike</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4 tabindex="0">Azienda</h4>
+            <ul>
+              <li><a href="#">Informazioni su Nike</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Lavora con noi</a></li>
+              <li><a href="#">Investitori</a></li>
+              <li><a href="#">Sostenibilità</a></li>
+              <li><a href="#">Obiettivo</a></li>
+              <li><a href="#">Segnala un problema</a></li>
+            </ul>
+          </div>
+          <div class="footer-column footer-language">
+            <button class="language-selector">
+              <svg
+                aria-hidden="true"
+                class="css-npy3on"
+                focusable="false"
+                viewBox="0 0 24 24"
+                role="img"
+                width="24px"
+                height="24px"
+                fill="none"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-miterlimit="10"
+                  stroke-width="1.5"
+                  d="M21.75 12A9.75 9.75 0 0112 21.75M21.75 12A9.75 9.75 0 0012 2.25M21.75 12c0 2.071-4.365 3.75-9.75 3.75S2.25 14.071 2.25 12m19.5 0c0-2.071-4.365-3.75-9.75-3.75S2.25 9.929 2.25 12M12 21.75A9.75 9.75 0 012.25 12M12 21.75c2.9 0 5.25-4.365 5.25-9.75S14.9 2.25 12 2.25m0 19.5c-2.9 0-5.25-4.365-5.25-9.75S9.1 2.25 12 2.25M2.25 12A9.75 9.75 0 0112 2.25"
+                ></path>
+              </svg>
+              Italia
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-top">
+          <nav class="footer-links">
+            <span>© 2025 Nike, Inc. Tutti i diritti riservati</span>
+            <div class="dropdown">
+              <a href="#" class="dropdown-toggle">
+                Guide
+                <svg
+                  aria-hidden="true"
+                  class="summary-caret"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                  role="img"
+                  width="24px"
+                  height="24px"
+                  fill="none"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    d="M17.5 9.25l-5.5 5.5-5.5-5.5"
+                  ></path></svg></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Nike Air</a></li>
+                <li><a href="#">Nike Air Max</a></li>
+                <li><a href="#">Nike FlyEase</a></li>
+                <li><a href="#">Nike Pegasus</a></li>
+                <li><a href="#">Nike React</a></li>
+                <li><a href="#">Nike Vaporfly</a></li>
+              </ul>
+            </div>
+            <a href="#">Condizioni d'uso</a>
+            <a href="#">Condizioni di vendita</a>
+            <a href="#">Info legali e societarie</a>
+            <a href="#">Informativa sulla privacy e sui cookie</a>
+            <a href="#">Impostazioni relative a privacy e cookie</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <script src="jordan.js"></script>
+  </body>
+</html>
