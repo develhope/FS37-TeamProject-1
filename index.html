@@ -1,76 +1,285 @@
 <!DOCTYPE html>
 <html lang="it">
- <head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nike. Just Do It. Nike IT</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    
-   
-      <!-- Barra superiore -->
-   <section class="up-section">
-    <div class="icons">
-     <img src="assets/svg/image.svg" alt="Nike Icons 1" class="nike-icons">
-    <img src="assets/svg/converse.svg" alt="Nike Icons 2" class="nike-icons">
-   </div>
-  <div class="up-link">
-    
-    <a href="#">Trova un negozio</a>
-    <div class="vertical-line"></div> 
-    <a href="#">Aiuto</a> 
-    <div class="vertical-line"></div>
-    <a href="#"> Unisciti a noi </a> 
-    <div class="vertical-line"></div>
-    <a href="#">Accedi</a>
-  </div>
-   </section>
+    <!-- Barra superiore -->
+    <section class="up-section">
+      <div class="icons">
+        <img src="assets/svg/image.svg" alt="Nike Icons 1" class="nike-icons" />
+        <img
+          src="assets/svg/converse.svg"
+          alt="Nike Icons 2"
+          class="nike-icons"
+        />
+      </div>
+      <div class="up-link">
+        <a href="#">Trova un negozio</a>
+        <div class="vertical-line"></div>
+        <a href="#">Aiuto</a>
+        <div class="vertical-line"></div>
+        <a href="#"> Unisciti a noi </a>
+        <div class="vertical-line"></div>
+        <a href="#">Accedi</a>
+      </div>
+    </section>
 
-  <!-- Intestazione principale -->
-  <header>
-    <!-- Sezione sinistra (loghi) -->
-    <div class="logos">
-      <img src="../assets/svg/nikelogo.svg" alt="Nike Icons" class="nike-logo">
-    </div>
+    <!-- Intestazione principale -->
+    <header>
+      <!-- Sezione sinistra (loghi) -->
+      <div class="logos">
+        <img
+          src="../assets/svg/nikelogo.svg"
+          alt="Nike Icons"
+          class="nike-logo"
+        />
+      </div>
 
-    <!-- Menu centrale -->
-    <nav>
-      <a href="#">Novità e in evidenza</a>
-      <a href="#">Uomo</a>
-      <a href="#">Donna</a>
-      <a href="/jordan.html">Jordan</a>
-    </nav>
+      <nav>
+        <div class="menu-item">
+          <a href="#">Novità e in evidenza</a>
+          <div class="submenu">
+            <div class="submenu-grid">
+              <div class="submenu-column">
+                <div class="submenu-category">In evidenza</div>
+                <a href="#">Tutti i nuovi arrivi</a>
+                <a href="#">Best seller</a>
 
-    <!-- Sezione destra -->
-   <div class="button-header-container">
-          <div class="search-icon-container">
-            <button aria-label="Cerca" type="button" id="nav-search-icon">
-              <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none">
-                <path stroke="currentColor" stroke-width="1.5" d="M13.962 16.296a6.716 6.716 0 01-3.462.954 6.728 6.728 0 01-4.773-1.977A6.728 6.728 0 013.75 10.5c0-1.864.755-3.551 1.977-4.773A6.728 6.728 0 0110.5 3.75c1.864 0 3.551.755 4.773 1.977A6.728 6.728 0 0117.25 10.5a6.726 6.726 0 01-.921 3.407c-.517.882-.434 1.988.289 2.711l3.853 3.853"></path>
-              </svg>
-            </button>
-            <input type="search" class="search-input" placeholder="Cerca" aria-label="Cerca prodotti" inputmode="search">
+                <a href="#">Calendario dei lanci SNKRS</a>
+                <a href="#">Guida ai regali Nike</a>
+                <a href="#">Articoli indispensabili per l'estate</a>
+              </div>
+              <div class="submenu-column">
+                <div class="submenu-category">Acquista le icone</div>
+                <a href="#">Air Force 1</a>
+                <a href="#">Air Jordan 1</a>
+                <a href="#">Air Max</a>
+                <a href="#">Dunk</a>
+                <a href="#">Blazer</a>
+                <a href="#">Mercurial</a>
+              </div>
+              <div class="submenu-column">
+                <div class="submenu-category">Jordan</div>
+                <a href="#">Nuove uscite Jordan</a>
+                <a href="#">Jordan tutte le sneaker</a>
+                <a href="#">Jordan Retro</a>
+                <a href="#">Jordan Basketball</a>
+                <a href="#">Jordan Golf</a>
+                <a href="#">Jordan e PSG</a>
+              </div>
+            </div>
           </div>
-          <a aria-label="Preferiti" class="preferiti" href="#" title="Preferiti"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none">
-              <path stroke="currentColor" stroke-width="1.5" d="M16.794 3.75c1.324 0 2.568.516 3.504 1.451a4.96 4.96 0 010 7.008L12 20.508l-8.299-8.299a4.96 4.96 0 010-7.007A4.923 4.923 0 017.205 3.75c1.324 0 2.568.516 3.504 1.451l.76.76.531.531.53-.531.76-.76a4.926 4.926 0 013.504-1.451"></path>
-            </svg>
-          </a>
-
-          <a aria-label="Articoli carrello: 0" class="carrello" href="#" title="Articoli carrello: 0">
-            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none">
-              <path stroke="currentColor" stroke-width="1.5" d="M8.25 8.25V6a2.25 2.25 0 012.25-2.25h3a2.25 2.25 0 110 4.5H3.75v8.25a3.75 3.75 0 003.75 3.75h9a3.75 3.75 0 003.75-3.75V8.25H17.5"></path>
-            </svg>
-          </a>
-          <a href="#" class="burger-menu" aria-label="Burger-menu">
-            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="4" y="6" width="16" height="2" rx="1" fill="currentColor"></rect>
-              <rect x="4" y="11" width="16" height="2" rx="1" fill="currentColor"></rect>
-              <rect x="4" y="16" width="16" height="2" rx="1" fill="currentColor"></rect>
-            </svg>
-          </a>
         </div>
-  </header>
+
+        <div class="menu-item">
+          <a href="#">Uomo</a>
+          <div class="submenu">
+            <div class="submenu-grid">
+              <div class="submenu-column">
+                <div class="submenu-category">Scarpe</div>
+                <a href="#">Tutte le scarpe</a>
+                <a href="#">Lifestyle</a>
+                <a href="#">Jordan</a>
+                <a href="#">Running</a>
+                <a href="#">Palestra e training</a>
+                <a href="#">Basketball</a>
+              </div>
+              <div class="submenu-column">
+                <div class="submenu-category">Abbigliamento</div>
+                <a href="#">Tutto l'abbigliamento</a>
+                <a href="#">Magliette e canottiere</a>
+                <a href="#">Pantaloncini</a>
+                <a href="#">Pantaloni e collant</a>
+                <a href="#">Felpe con cappuccio e magliette</a>
+                <a href="#">Giacche e gilet</a>
+              </div>
+              <div class="submenu-column">
+                <div class="submenu-category">Scopri lo sport</div>
+                <a href="#">Running</a>
+                <a href="#">Basketball</a>
+                <a href="#">Jordan</a>
+                <a href="#">Golf</a>
+                <a href="#">Tennis</a>
+                <a href="#">Yoga</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <a href="#">Donna</a>
+          <div class="submenu">
+            <div class="submenu-grid">
+              <div class="submenu-column">
+                <div class="submenu-category">Scarpe</div>
+                <a href="#">Tutte le scarpe</a>
+                <a href="#">Lifestyle</a>
+                <a href="#">Jordan</a>
+                <a href="#">Running</a>
+                <a href="#">Palestra e training</a>
+                <a href="#">Basketball</a>
+              </div>
+              <div class="submenu-column">
+                <div class="submenu-category">Abbigliamento</div>
+                <a href="#">Tutto l'abbigliamento</a>
+                <a href="#">Magliette e canottiere</a>
+                <a href="#">Pantaloncini</a>
+                <a href="#">Pantaloni e collant</a>
+                <a href="#">Felpe con cappuccio e magliette</a>
+                <a href="#">Giacche e gilet</a>
+              </div>
+              <div class="submenu-column">
+                <div class="submenu-category">Scopri lo sport</div>
+                <a href="#">Running</a>
+                <a href="#">Basketball</a>
+                <a href="#">Jordan</a>
+                <a href="#">Golf</a>
+                <a href="#">Tennis</a>
+                <a href="#">Yoga</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <a href="#">Kids</a>
+          <div class="submenu">
+            <div class="submenu-grid">
+              <div class="submenu-column">
+                <div class="submenu-category">Scarpe</div>
+                <a href="#">Tutte le scarpe</a>
+                <a href="#">Lifestyle</a>
+                <a href="#">Jordan</a>
+                <a href="#">Running</a>
+                <a href="#">Basketball</a>
+              </div>
+              <div class="submenu-column">
+                <div class="submenu-category">Abbigliamento</div>
+                <a href="#">Tutto l'abbigliamento</a>
+                <a href="#">Magliette</a>
+                <a href="#">Pantaloncini</a>
+                <a href="#">Pantaloni</a>
+                <a href="#">Felpe</a>
+              </div>
+              <div class="submenu-column">
+                <div class="submenu-category">Per età</div>
+                <a href="#">Bambini piccoli (17-27)</a>
+                <a href="#">Bambini (27.5-35)</a>
+                <a href="#">Ragazzi (35.5-40)</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Sezione destra -->
+      <div class="button-header-container">
+        <div class="search-icon-container">
+          <button aria-label="Cerca" type="button" id="nav-search-icon">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              viewBox="0 0 24 24"
+              role="img"
+              width="24px"
+              height="24px"
+              fill="none"
+            >
+              <path
+                stroke="currentColor"
+                stroke-width="1.5"
+                d="M13.962 16.296a6.716 6.716 0 01-3.462.954 6.728 6.728 0 01-4.773-1.977A6.728 6.728 0 013.75 10.5c0-1.864.755-3.551 1.977-4.773A6.728 6.728 0 0110.5 3.75c1.864 0 3.551.755 4.773 1.977A6.728 6.728 0 0117.25 10.5a6.726 6.726 0 01-.921 3.407c-.517.882-.434 1.988.289 2.711l3.853 3.853"
+              ></path>
+            </svg>
+          </button>
+          <input
+            type="search"
+            class="search-input"
+            placeholder="Cerca"
+            aria-label="Cerca prodotti"
+            inputmode="search"
+          />
+        </div>
+        <a aria-label="Preferiti" class="preferiti" href="#" title="Preferiti"
+          ><svg
+            aria-hidden="true"
+            focusable="false"
+            viewBox="0 0 24 24"
+            role="img"
+            width="24px"
+            height="24px"
+            fill="none"
+          >
+            <path
+              stroke="currentColor"
+              stroke-width="1.5"
+              d="M16.794 3.75c1.324 0 2.568.516 3.504 1.451a4.96 4.96 0 010 7.008L12 20.508l-8.299-8.299a4.96 4.96 0 010-7.007A4.923 4.923 0 017.205 3.75c1.324 0 2.568.516 3.504 1.451l.76.76.531.531.53-.531.76-.76a4.926 4.926 0 013.504-1.451"
+            ></path>
+          </svg>
+        </a>
+
+        <a
+          aria-label="Articoli carrello: 0"
+          class="carrello"
+          href="#"
+          title="Articoli carrello: 0"
+        >
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            viewBox="0 0 24 24"
+            role="img"
+            width="24px"
+            height="24px"
+            fill="none"
+          >
+            <path
+              stroke="currentColor"
+              stroke-width="1.5"
+              d="M8.25 8.25V6a2.25 2.25 0 012.25-2.25h3a2.25 2.25 0 110 4.5H3.75v8.25a3.75 3.75 0 003.75 3.75h9a3.75 3.75 0 003.75-3.75V8.25H17.5"
+            ></path>
+          </svg>
+        </a>
+        <a href="#" class="burger-menu" aria-label="Burger-menu">
+          <svg
+            viewBox="0 0 24 24"
+            width="24"
+            height="24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="4"
+              y="6"
+              width="16"
+              height="2"
+              rx="1"
+              fill="currentColor"
+            ></rect>
+            <rect
+              x="4"
+              y="11"
+              width="16"
+              height="2"
+              rx="1"
+              fill="currentColor"
+            ></rect>
+            <rect
+              x="4"
+              y="16"
+              width="16"
+              height="2"
+              rx="1"
+              fill="currentColor"
+            ></rect>
+          </svg>
+        </a>
+      </div>
+    </header>
     <main>
       <div class="article-container">
         <!-- Primo container -->
@@ -150,159 +359,159 @@
             <a href="#">Acquista</a>
           </div>
         </section>
+      </div>
+      <!-- Container del carosello -->
+      <div class="carousel-section">
+        <!-- Pulsanti frecce e titolo -->
+        <section class="pulsanti">
+          <h2 class="titolo-pulsanti">Acquista le nostre icone</h2>
+          <div class="freccie-container">
+            <a href="#slide-1" class="frecce freccia-prev">
+              <img
+                src="../assets/svg/freccia-sinistra.svg"
+                alt="freccia indietro"
+              />
+            </a>
+            <a href="#slide-2" class="frecce freccia-next">
+              <img
+                src="../assets/svg/freccia-destra.svg"
+                alt="freccia avanti"
+              />
+            </a>
+          </div>
+        </section>
 
-        <!-- Container del carosello -->
-        <div class="carousel-section">
-          <!-- Pulsanti frecce e titolo -->
-          <section class="pulsanti">
-            <h2 class="titolo-pulsanti">Acquista le nostre icone</h2>
-            <div class="freccie-container">
-              <a href="#slide-1" class="frecce freccia-prev">
-                <img
-                  src="../assets/svg/freccia-sinistra.svg"
-                  alt="freccia indietro"
-                />
-              </a>
-              <a href="#slide-2" class="frecce freccia-next">
-                <img
-                  src="../assets/svg/freccia-destra.svg"
-                  alt="freccia avanti"
-                />
-              </a>
-            </div>
-          </section>
-
-          <!-- Carosello -->
-          <section class="carousel" aria-label="Galleria scarpe">
-            <div class="carousel__viewport">
-              <ol class="carousel__slides">
-                <!-- Slide 1 -->
-                <li id="slide-1" class="carousel__slide">
-                  <div class="carousel__content">
-                    <div
-                      class="scarpa-item"
-                      style="
-                        background-image: url('/assets/img/scarpe/scarpa-28.png');
-                      "
-                    >
-                      <div class="area-button">
-                        <a href="#">Acquista</a>
-                      </div>
-                    </div>
-                    <div
-                      class="scarpa-item"
-                      style="
-                        background-image: url('/assets/img/scarpe/scarpa-33.png');
-                      "
-                    >
-                      <div class="area-button">
-                        <a href="#">Acquista</a>
-                      </div>
-                    </div>
-                    <div
-                      class="scarpa-item"
-                      style="
-                        background-image: url('/assets/img/scarpe/scarpa-30.png');
-                      "
-                    >
-                      <div class="area-button">
-                        <a href="#">Acquista</a>
-                      </div>
+        <!-- Carosello -->
+        <section class="carousel" aria-label="Galleria scarpe">
+          <div class="carousel__viewport">
+            <ol class="carousel__slides">
+              <!-- Slide 1 -->
+              <li id="slide-1" class="carousel__slide">
+                <div class="carousel__content">
+                  <div
+                    class="scarpa-item"
+                    style="
+                      background-image: url('/assets/img/scarpe/scarpa-28.png');
+                    "
+                  >
+                    <div class="area-button">
+                      <a href="#">Acquista</a>
                     </div>
                   </div>
-                </li>
-
-                <!-- Slide 2 -->
-                <li id="slide-2" class="carousel__slide">
-                  <div class="carousel__content">
-                    <div
-                      class="scarpa-item"
-                      style="
-                        background-image: url('/assets/img/scarpe/scarpa-35.png');
-                      "
-                    >
-                      <div class="area-button">
-                        <a href="#">Acquista</a>
-                      </div>
-                    </div>
-                    <div
-                      class="scarpa-item"
-                      style="
-                        background-image: url('/assets/img/scarpe/scarpa-34.png');
-                      "
-                    >
-                      <div class="area-button">
-                        <a href="#">Acquista</a>
-                      </div>
-                    </div>
-                    <div
-                      class="scarpa-item"
-                      style="
-                        background-image: url('/assets/img/scarpe/scarpa-32.png');
-                      "
-                    >
-                      <div class="area-button">
-                        <a href="#">Acquista</a>
-                      </div>
+                  <div
+                    class="scarpa-item"
+                    style="
+                      background-image: url('/assets/img/scarpe/scarpa-33.png');
+                    "
+                  >
+                    <div class="area-button">
+                      <a href="#">Acquista</a>
                     </div>
                   </div>
-                </li>
-              </ol>
-            </div>
-          </section>
-        </div>
+                  <div
+                    class="scarpa-item"
+                    style="
+                      background-image: url('/assets/img/scarpe/scarpa-30.png');
+                    "
+                  >
+                    <div class="area-button">
+                      <a href="#">Acquista</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Slide 2 -->
+              <li id="slide-2" class="carousel__slide">
+                <div class="carousel__content">
+                  <div
+                    class="scarpa-item"
+                    style="
+                      background-image: url('/assets/img/scarpe/scarpa-35.png');
+                    "
+                  >
+                    <div class="area-button">
+                      <a href="#">Acquista</a>
+                    </div>
+                  </div>
+                  <div
+                    class="scarpa-item"
+                    style="
+                      background-image: url('/assets/img/scarpe/scarpa-34.png');
+                    "
+                  >
+                    <div class="area-button">
+                      <a href="#">Acquista</a>
+                    </div>
+                  </div>
+                  <div
+                    class="scarpa-item"
+                    style="
+                      background-image: url('/assets/img/scarpe/scarpa-32.png');
+                    "
+                  >
+                    <div class="area-button">
+                      <a href="#">Acquista</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </section>
+      </div>
       <!-- Sesto container: link in 4 colonne -->
-    <div class="menu-preview">
-    <div class="container links-preview">
-    <div class="links-grid">
-      <div class="colonna">
-        <h3>Scarpe</h3>
-        <ul>
-          <li><a href="#">Scarpe da running nere</a></li>
-          <li><a href="#">Scarpe da running bianche</a></li>
-          <li><a href="#">Scarpe Nike P‑6000</a></li>
-          <li><a href="#">Nike Initiator</a></li>
-          <li class="extra"><a href="#">Scarpe V2K Run</a></li>
-          <li class="extra"><a href="#">Nike Shox</a></li>
-          <li class="extra"><a href="#">Scarpe Nike Waffle</a></li>
-          <li class="extra"><a href="#">Nike Cortez</a></li>
-          <li class="extra"><a href="#">Nike Vomero</a></li>
-          <li class="extra"><a href="#">Scarpe sportive nere</a></li>
-          <li class="extra"><a href="#">Scarpe Nike Motiva</a></li>
-        </ul>
-      </div>
+      <div class="menu-preview">
+        <div class="container links-preview">
+          <div class="links-grid">
+            <div class="colonna">
+              <h3>Scarpe</h3>
+              <ul>
+                <li><a href="#">Scarpe da running nere</a></li>
+                <li><a href="#">Scarpe da running bianche</a></li>
+                <li><a href="#">Scarpe Nike P‑6000</a></li>
+                <li><a href="#">Nike Initiator</a></li>
+                <li class="extra"><a href="#">Scarpe V2K Run</a></li>
+                <li class="extra"><a href="#">Nike Shox</a></li>
+                <li class="extra"><a href="#">Scarpe Nike Waffle</a></li>
+                <li class="extra"><a href="#">Nike Cortez</a></li>
+                <li class="extra"><a href="#">Nike Vomero</a></li>
+                <li class="extra"><a href="#">Scarpe sportive nere</a></li>
+                <li class="extra"><a href="#">Scarpe Nike Motiva</a></li>
+              </ul>
+            </div>
 
-      <div class="colonna">
-        <h3>Abbigliamento</h3>
-        <ul>
-          <li><a href="#">Pantaloni da yoga</a></li>
-          <li><a href="#">Pantaloni Jogger Tech Fleece</a></li>
-          <li><a href="#">Tech Fleece</a></li>
-        </ul>
-      </div>
+            <div class="colonna">
+              <h3>Abbigliamento</h3>
+              <ul>
+                <li><a href="#">Pantaloni da yoga</a></li>
+                <li><a href="#">Pantaloni Jogger Tech Fleece</a></li>
+                <li><a href="#">Tech Fleece</a></li>
+              </ul>
+            </div>
 
-      <div class="colonna">
-        <h3>Bambini</h3>
-        <ul>
-          <li><a href="#">Scarpe nere per bambini</a></li>
-          <li><a href="#">Scarpe nere kids</a></li>
-        </ul>
-      </div>
+            <div class="colonna">
+              <h3>Bambini</h3>
+              <ul>
+                <li><a href="#">Scarpe nere per bambini</a></li>
+                <li><a href="#">Scarpe nere kids</a></li>
+              </ul>
+            </div>
 
-      <div class="colonna">
-        <h3>In evidenza</h3>
-        <ul>
-          <li><a href="#">Squadre di calcio</a></li>
-          <li><a href="#">Calcio</a></li>
-          <li><a href="#">Nike Inghilterra</a></li>
-          <li><a href="#">Nike Run Club</a></li>
-          <li class="extra"><a href="#">Nike Training Club</a></li>
-          <li class="extra"><a href="#">Idee regalo</a></li>
-        </ul>
+            <div class="colonna">
+              <h3>In evidenza</h3>
+              <ul>
+                <li><a href="#">Squadre di calcio</a></li>
+                <li><a href="#">Calcio</a></li>
+                <li><a href="#">Nike Inghilterra</a></li>
+                <li><a href="#">Nike Run Club</a></li>
+                <li class="extra"><a href="#">Nike Training Club</a></li>
+                <li class="extra"><a href="#">Idee regalo</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
     </main>
     <footer class="footer">
       <div class="footer-top">
@@ -372,7 +581,6 @@
 
       <div class="footer-bottom">
         <div class="footer-bottom-top">
-          
           <nav class="footer-links">
             <span>© 2025 Nike, Inc. Tutti i diritti riservati</span>
             <div class="dropdown">
@@ -392,7 +600,8 @@
                     stroke="currentColor"
                     stroke-width="1.5"
                     d="M17.5 9.25l-5.5 5.5-5.5-5.5"
-                  ></path></svg></a>
+                  ></path></svg
+              ></a>
               <ul class="dropdown-menu">
                 <li><a href="#">Nike Air</a></li>
                 <li><a href="#">Nike Air Max</a></li>

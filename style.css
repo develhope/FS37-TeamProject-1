@@ -971,12 +971,15 @@ header {
   padding: 0px 48px 0px 48px;
 }
 header {
+  padding: 0px 48px 0px 48px;
   display: grid;
-  overflow: hidden;
+  overflow: visible;
   align-content: center;
   align-self: stretch;
   grid-template-columns: repeat(3, 1fr);
-  max-height: 60px;
+  min-height: 60px;
+  position: relative;
+  z-index: 1000;
 }
 .button-header-container {
   display: flex;
@@ -1089,6 +1092,105 @@ nav {
   display: flex;
   align-items: center;
 }
+
+/*Modifiche nav*/
+
+/* Stili base per i link */
+a {
+  color: var(--color-black);
+  text-decoration: none;
+  font: var(--font-link);
+  font-weight: bold;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+}
+
+nav a {
+  font-size: 16px;
+  margin: 0 16px;
+  padding: 20px 8px;
+  position: relative;
+}
+
+nav a:hover {
+  border-bottom: 2px solid var(--color-black);
+}
+
+/* Menu Item */
+.menu-item {
+  position: relative;
+  display: inline-block;
+}
+
+/* Submenu */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%); /* Centra il menu rispetto al link */
+  background-color: white;
+  width: 800px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  z-index: 9999;
+  border-radius: 8px;
+  padding: 40px;
+  margin-top: 8px;
+  border: none;
+}
+
+/* Grid Layout per il mega menu */
+.submenu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.submenu-column {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Titoli delle categorie */
+.submenu-category {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--color-black);
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* Link all'interno del submenu */
+.submenu a {
+  display: block;
+  padding: 8px 0;
+  margin: 0;
+  font-size: 14px;
+  color: #707072;
+  border-bottom: none;
+  transition: color 0.2s ease;
+  font-weight: 400;
+}
+
+.submenu a:hover {
+  color: var(--color-black);
+  border-bottom: none;
+  background-color: transparent;
+}
+
+/* Mostra il submenu al passaggio del mouse */
+.menu-item:hover .submenu {
+  display: block;
+  animation: fadeInUp 0.3s ease-out;
+}
+
 .up-link {
   display: flex;
   align-items: center;
