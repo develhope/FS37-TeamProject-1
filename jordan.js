@@ -1,3 +1,188 @@
+const products = [
+  {
+    "genere": "uomo",
+    "prezzo": 75,
+    "sconti e offerte": "nessuno",
+    "colore": "nero",
+    "collezioni": "Jordan Editions",
+    "altezza scarpa": "taglio basso",
+    "sport": "lifestyle"
+  },
+  {
+    "genere": "donna",
+    "prezzo": 145,
+    "sconti e offerte": "outlet",
+    "colore": "blu",
+    "collezioni": "Jordan Spizike",
+    "altezza scarpa": "profilo medio",
+    "sport": "performance"
+  },
+  {
+    "genere": "unisex",
+    "prezzo": 230,
+    "sconti e offerte": "nessuno",
+    "colore": "marrone",
+    "collezioni": "Jordan Editions",
+    "altezza scarpa": "taglio alto",
+    "sport": "basketball"
+  },
+  {
+    "kids": "bambina",
+    "prezzo": 52,
+    "sconti e offerte": "outlet",
+    "colore": "verde",
+    "collezioni": "Jordan Spizike",
+    "altezza scarpa": "taglio basso",
+    "sport": "golf"
+  },
+  {
+    "kids": "bambino",
+    "prezzo": 189,
+    "sconti e offerte": "nessuno",
+    "colore": "grigio",
+    "collezioni": "Jordan Editions",
+    "altezza scarpa": "profilo medio",
+    "sport": "danza"
+  },
+  {
+    "kids": "bambina",
+    "prezzo": 300,
+    "sconti e offerte": "outlet",
+    "colore": "arancione",
+    "collezioni": "Jordan Spizike",
+    "altezza scarpa": "taglio alto",
+    "sport": "lifestyle"
+  },
+  {
+    "kids": "bambino",
+    "prezzo": 95,
+    "sconti e offerte": "nessuno",
+    "colore": "rosa",
+    "collezioni": "Jordan Editions",
+    "altezza scarpa": "profilo medio",
+    "sport": "performance"
+  },
+  {
+    "genere": "donna",
+    "prezzo": 128,
+    "sconti e offerte": "outlet",
+    "colore": "viola",
+    "collezioni": "Jordan Spizike",
+    "altezza scarpa": "taglio basso",
+    "sport": "basketball"
+  },
+  {
+    "genere": "unisex",
+    "prezzo": 215,
+    "sconti e offerte": "nessuno",
+    "colore": "rosso",
+    "collezioni": "Jordan Editions",
+    "altezza scarpa": "profilo medio",
+    "sport": "golf"
+  },
+  {
+    "genere": "uomo",
+    "prezzo": 60,
+    "sconti e offerte": "outlet",
+    "colore": "bianco",
+    "collezioni": "Jordan Spizike",
+    "altezza scarpa": "taglio alto",
+    "sport": "danza"
+  },
+  {
+    "genere": "donna",
+    "prezzo": 179,
+    "sconti e offerte": "nessuno",
+    "colore": "giallo",
+    "collezioni": "Jordan Editions",
+    "altezza scarpa": "taglio basso",
+    "sport": "lifestyle"
+  },
+  {
+    "genere": "unisex",
+    "prezzo": 132,
+    "sconti e offerte": "outlet",
+    "colore": "nero",
+    "collezioni": "Jordan Spizike",
+    "altezza scarpa": "profilo medio",
+    "sport": "performance"
+  },
+  {
+    "genere": "uomo",
+    "prezzo": 247,
+    "sconti e offerte": "nessuno",
+    "colore": "blu",
+    "collezioni": "Jordan Editions",
+    "altezza scarpa": "taglio alto",
+    "sport": "basketball"
+  },
+  {
+    "kids": "bambina",
+    "prezzo": 85,
+    "sconti e offerte": "outlet",
+    "colore": "marrone",
+    "collezioni": "Jordan Spizike",
+    "altezza scarpa": "taglio basso",
+    "sport": "golf"
+  },
+  {
+    "kids": "bambino",
+    "prezzo": 158,
+    "sconti e offerte": "nessuno",
+    "colore": "verde",
+    "collezioni": "Jordan Editions",
+    "altezza scarpa": "profilo medio",
+    "sport": "danza"
+  },
+  {
+    "genere": "uomo",
+    "prezzo": 99,
+    "sconti e offerte": "outlet",
+    "colore": "grigio",
+    "collezioni": "Jordan Spizike",
+    "altezza scarpa": "taglio alto",
+    "sport": "lifestyle"
+  },
+  {
+    "genere": "donna",
+    "prezzo": 212,
+    "sconti e offerte": "nessuno",
+    "colore": "arancione",
+    "collezioni": "Jordan Editions",
+    "altezza scarpa": "profilo medio",
+    "sport": "performance"
+  },
+  {
+    "genere": "unisex",
+    "prezzo": 141,
+    "sconti e offerte": "outlet",
+    "colore": "rosa",
+    "collezioni": "Jordan Spizike",
+    "altezza scarpa": "taglio basso",
+    "sport": "basketball"
+  },
+  {
+    "genere": "uomo",
+    "prezzo": 68,
+    "sconti e offerte": "nessuno",
+    "colore": "viola",
+    "collezioni": "Jordan Editions",
+    "altezza scarpa": "profilo medio",
+    "sport": "golf"
+  },
+  {
+    "genere": "donna",
+    "prezzo": 256,
+    "sconti e offerte": "outlet",
+    "colore": "rosso",
+    "collezioni": "Jordan Spizike",
+    "altezza scarpa": "taglio alto",
+    "sport": "danza"
+  }
+]
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
   //Inietto dinamicamente nel <head> il CSS per la freccina e per il wrapper .filter-content
   const style = document.createElement('style');
@@ -50,54 +235,58 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-//PARTE FAKE FILTER
-
-// genero prodotti con un loop
-const genders = ['uomo', 'donna', 'unisex'];
-const prices  = ['inferiore-a-50', '50-100', '100-150', 'superiore-a-150'];
-const colors  = ['nero', 'blu', 'marrone', 'verde', 'grigio', 'arancione', 'rosa', 'viola', 'rosso', 'bianco', 'giallo'];
-
-const products = [];
-
-for (let i = 1; i <= 136; i++) {
-  products.push({
-    id: i,
-    gender: genders[(i - 1) % genders.length],
-    price:  prices[(i - 1) % prices.length],
-    color:  colors[(i - 1) % colors.length],
-    kids:   (i % 5 === 0) //ogni 5° prodotto è “kids”, per esempio, me lo sono inventata RIVEDEREEEEEE
-  });
-}
-
 
 
 document.addEventListener('DOMContentLoaded', () => {
   const countSpan = document.getElementById('result-count');
 
-  // funzione che legge tutte le checkbox selezionate
-  function getSelectedFilters() {
-    const selected = {
-      gender: [...document.querySelectorAll('input[name="genere"]:checked')].map(i => i.value),
-      price:  [...document.querySelectorAll('input[name="price"]:checked')].map(i => i.value),
-      kids:   [...document.querySelectorAll('input[name="bambino"], input[name="bambina"]')]
-                 .filter(i => i.checked)
-                 .map(i => i.name === 'bambino' ? 'bambino' : 'bambina'),
+//estrae da tutte le checkbox raggruppate per name[]
+function getSelectedFilters() {
+  return {
+    genere: [...document.querySelectorAll('input[name="genere"]:checked')]
+             .map(el => el.value),
+    kids:   [...document.querySelectorAll('input[name="kids"]:checked')]
+             .map(el => el.value),
+    prezzo: [...document.querySelectorAll('input[name="prezzo"]:checked')]
+             .map(el => Number(el.value)),            // numero tra 30 e 300
+    sconti: [...document.querySelectorAll('input[name="sconti"]:checked')]
+             .map(el => el.value),                  // “nessuno” o “outlet”
+    colore: [...document.querySelectorAll('input[name="colore"]:checked')]
+             .map(el => el.value),
+    collezioni: [...document.querySelectorAll('input[name="collezioni"]:checked')]
+             .map(el => el.value),
+    altezza: [...document.querySelectorAll('input[name="altezza"]:checked')]
+             .map(el => el.value),
+    sport:  [...document.querySelectorAll('input[name="sport"]:checked')]
+             .map(el => el.value),
+  };
+}
 
-    };
-    return selected;
-  }
+// filtra products in base alla selezione fatta
+function filterProducts() {
+  const sel = getSelectedFilters();
+  return products.filter(p => {
+    
+    if (sel.genere.length && !sel.genere.includes(p.genere))                          return false;
+    if (sel.kids.length   && !sel.kids.includes(p.kids))                              return false;
+    if (sel.prezzo.length) {
+      const ok = sel.prezzo.some(fascia => {
+        if (fascia === "<50")       return prezzo < 50;
+        if (fascia === "50-100")    return prezzo >= 50  && prezzo <= 100;
+        if (fascia === "100-150")   return prezzo > 100  && prezzo <= 150;
+        if (fascia === ">150")      return prezzo > 150;
+      });
+      if (!ok) return false;
+    }
+    if (sel.sconti.length && !sel.sconti.includes(p["sconti e offerte"]))             return false;
+    if (sel.colore.length && !sel.colore.includes(p.colore))                          return false;
+    if (sel.collezioni.length && !sel.collezioni.includes(p.collezioni))               return false;
+    if (sel.altezza.length && !sel.altezza.includes(p["altezza scarpa"]))              return false;
+    if (sel.sport.length  && !sel.sport.includes(p.sport))                             return false;
+    return true;
+  });
+}
 
-  // filterProducts restituisce i prodotti che combinano le condizioni--PROBLEMAAAAAAAAAAAAAAAAAAAAAA
-  function filterProducts() {
-    const sel = getSelectedFilters();
-    return products.filter(p => {
-      // se ho selezionato almeno un gender, p.gender deve starci dentro
-      if (sel.gender.length && !sel.gender.includes(p.gender)) return false;
-      if (sel.price.length  && !sel.price.includes(p.price))   return false;
-      if (sel.kids.length   && !sel.kids.includes(p.kids ? 'bambino' : '')) return false;
-      return true;
-    });
-  }
 
   // aggiorna il contatore in pagina
   function updateCount() {
