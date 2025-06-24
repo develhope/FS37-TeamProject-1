@@ -288,6 +288,7 @@ function filterProducts() {
 }
 
 
+
   // aggiorna il contatore in pagina
   function updateCount() {
     const matched = filterProducts();
@@ -300,4 +301,20 @@ function filterProducts() {
 
   // inizializza al valore max con tutti i prodotti
   countSpan.textContent = products.length;
+
+
+  //PARTE NUOVA PER BOTTONE FILTRO MEDIA QUERY
+
+ // ─── TOGGLE MENU FILTRI MOBILE ────────────────────────────────────────────
+  const trigger = document.querySelector('.filter-toggle');
+const sidebar = document.querySelector('aside.sidebar');
+
+trigger.addEventListener('click', () => {
+  // toggle visibilità
+  sidebar.classList.toggle('open');
 });
+
+
+});
+
+

@@ -1283,6 +1283,18 @@ hr {
   }
 
 
+/* quando ha la classe .open diventa overlay full-page */
+aside.sidebar.open {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #fff;      /* sfondo bianco */
+  z-index: 1000;
+  overflow-y: auto;      /* scroll interno se serve */
+}
 
 .filter-toggle {
   display: inline-flex;
@@ -1318,9 +1330,11 @@ hr {
     display: none;
   }
 
+
+  /*parte da testare*/
+  
+
  }
-
-
 
 
 @media (min-width: 960px) and (max-width: 1200px) {
