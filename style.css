@@ -1269,6 +1269,10 @@ hr {
   text-decoration: underline;
 }
 
+.filter-toggle {
+  display: none;
+}
+
 /*media query per aside Elena*/
  @media (max-width: 1024px) {
   .profili-scarpe ul{
@@ -1278,9 +1282,42 @@ hr {
     padding-bottom: 20px;
   }
 
+
+
+.filter-toggle {
+  display: inline-flex;
+  align-items: center;
+    padding: 0.5rem 1rem;
+    background: var(--color-white);
+    color: var(--color-black);
+    border: var(--color-disabled-btn) solid 1px;
+    border-radius: 999px;
+    font-size: 1rem;
+    
+  }
+
+.filter-toggle > button {
+  all: unset;                   /* Rimuove padding, border, background, font-family etc. */
+  font: inherit;                /* Eredita la tipografia dal wrapper */
+  color: var(--color-black);
+  cursor: pointer;                 /* Colore del testo */
+}
+
+.filter-toggle .icon-filter-ds {
+  width: 1em;                   /* pari all’altezza del font */
+  height: 1em;
+  margin-left: 0.5em;           /* spazio tra testo e icona */
+  stroke: currentColor;         /* eredita il colore del testo */
+}
+
+.filter-toggle:hover {
+ border: var(--color-black) solid 1px;
+}
+
   aside.sidebar {
     display: none;
   }
+
  }
 
 
