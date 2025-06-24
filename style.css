@@ -1269,6 +1269,19 @@ hr {
   text-decoration: underline;
 }
 
+/*media query per aside Elena*/
+ @media (max-width: 1024px) {
+  .profili-scarpe ul{
+    display: flex;
+    flex-direction: row;
+    border-bottom: var(--color-grey) solid 1px;
+    padding-bottom: 20px;
+  }
+
+  aside.sidebar {
+    display: none;
+  }
+ }
 
 
 
