@@ -327,6 +327,7 @@ body {
   position: relative;
   padding: 0 12px;
   margin-top: 12px;
+  background-color: var(--color-light-grey); 
 }
 
 .carousel__viewport {
