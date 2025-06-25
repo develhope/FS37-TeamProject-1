@@ -606,13 +606,14 @@ body {
 
 /* ======= TOP ======= */
 .footer-top {
-  padding: 1.75rem 1.25rem 2.5rem;
+  /* padding: 1.75rem 1.25rem 2.5rem; */
+  padding: 48px;
 }
 
 .footer-nav {
   display: flex;
-  max-width: 75rem;
-  margin: 0 auto;
+  /* max-width: 75rem;
+  margin: 0 auto; */
 }
 .footer-column {
   flex: 1;
@@ -679,7 +680,7 @@ svg {
   justify-content: space-between;
   gap: 0.75rem;
   max-width: 75rem;
-  padding: 1.5rem 1.25rem; /* padding top/bottom 1.5rem, left/right 1.25rem */
+  padding: 1.5rem 1.25rem; /*padding top/bottom 1.5rem, left/right 1.25rem */
   box-sizing: border-box;
 }
 
@@ -1190,12 +1191,13 @@ aside.sidebar {
   gap: 2rem; /* space between sidebar and grid */
    height: calc(100vh - 120px); /* Adatta all'header/carousel */
   overflow: hidden;
+  padding-right: 48px;
 }
 
 .sidebar {
   width: 280px;
 
-  padding: 16px;
+  padding: 16px ;
   display: flex;
   flex-direction: column;
   position: sticky;
@@ -1556,7 +1558,7 @@ aside.sidebar.open {
   }
 }
 
-<<<<<<< HEAD
+/* <<<<<<< HEAD */
 /*Carosello*/
 
 .carousel {
@@ -1700,7 +1702,7 @@ aside.sidebar.open {
 }
 
 /*Fine Carosello*/
-=======
+
 
 /* Jordan Products */
 .title {
@@ -1817,5 +1819,5 @@ aside.sidebar.open {
 #freccia img {
   transition: transform 0.3s ease;
 }
->>>>>>> prodotti-jordan
+
 
