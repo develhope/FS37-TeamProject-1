@@ -1788,19 +1788,22 @@ aside.sidebar.open {
 
 #ordina{
   position: absolute;
+  top: 70%;
+  left: 84.5%;
 }
 
 
 #menu ul {
-  
+  display: flex;
+  flex-direction: column;
+  position: absolute;
   background-color: white;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 0px 0px 20px;;
   width: 200px;
   padding: 0.5rem 0;
   list-style: none;
-  
+  top: 90%;
+  left: 0;
 }
 
 /* Voci di menù */
@@ -1809,6 +1812,12 @@ aside.sidebar.open {
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
+
+/* .menu-dropdown{
+  position: absolute;
+  top: 100%;
+  left: 0;
+} */
 
 .freccia-su {
   transform: rotate(180deg);
