@@ -176,10 +176,6 @@
             </div>
           </div>
         </div>
-        <a href="/index.html">Novità e in evidenza</a>
-        <a href="#">Uomo</a>
-        <a href="#">Donna</a>
-        <a href="#">Jordan</a>
       </nav>
 
       <!-- Sezione destra -->
@@ -287,10 +283,42 @@
       </div>
     </header>
     <main>
-      <div class="wall-header">
+      
+      <!-- Collezione Jordan -->
+    <div class="carousel">
+          <div class="carousel-content">
+              <div class="arrow left-arrow">&#10094;</div> 
+  
+              <div class="carousel-text-wrapper">
+                  <div class="slide active">
+                      <p>TUTTI I NUOVI ARRIVI</p>
+                      <a href="#">Acquista</a>
+                  </div>
+                  <div class="slide">
+                      <div class="delivery-info">
+                          <p>CONSEGNA E RESI GRATUITI</p>
+                          <p>Per i Member Nike, consegne e resi entro 30 giorni gratuiti. <br><a href="#">Scopri di più. Unisciti a noi</a></p>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="arrow right-arrow">&#10095;</div> 
+          </div>
+      </div>
+    <div class="collection-nav">
+      <ul>
+        <div class="scarpe">
+          <li><a href="#">Jordan</a></li>
+            <p>/</p>
+            <li><a href="#">Scarpe</a></li>
+          </div>
+        </ul>
+        <div class="resume">
+          <h2>Scarpe Air Jordan (<span id="result-count"></span>)</h2>
+        </div>
+        <div class="wall-header">
         <div>
-          <h1>Collezione Jordan</h1>
-          <h1 id="title-header"></h1>
+           <h1 id="title-header"></h1>
         </div>
         <div id="head-filter">
           <p>Nascondi filtri</p>
@@ -317,48 +345,6 @@
           </div>
         </div>
       </div>
-       
-    <div id="product-grid" class="grid"></div>
-    <script src="jordan.js"></script>
-    </main>
-
-    <!--Carosello-->
-
-  <div class="carousel">
-        <div class="carousel-content">
-            <div class="arrow left-arrow">&#10094;</div> 
-
-            <div class="carousel-text-wrapper">
-                <div class="slide active">
-                    <p>TUTTI I NUOVI ARRIVI</p>
-                    <a href="#">Acquista</a>
-                </div>
-                <div class="slide">
-                    <div class="delivery-info">
-                        <p>CONSEGNA E RESI GRATUITI</p>
-                        <p>Per i Member Nike, consegne e resi entro 30 giorni gratuiti. <br><a href="#">Scopri di più. Unisciti a noi</a></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="arrow right-arrow">&#10095;</div> 
-        </div>
-    </div>
-    
-    <!--Fine Carosello-->
-
-      <!-- Collezione Jordan -->
-      <div class="collection-nav">
-        <ul>
-          <div class="scarpe">
-            <li><a href="#">Jordan</a></li>
-            <p>/</p>
-            <li><a href="#">Scarpe</a></li>
-          </div>
-        </ul>
-        <div class="resume">
-          <h2>Scarpe Air Jordan (<span id="result-count"></span>)</h2>
-        </div>
         
         <div class="profili-scarpe">
           <ul>
@@ -368,6 +354,7 @@
           </ul>
         </div>
       </div>
+      
       <div class="filter-toggle">
        <button id="filtro">Filtro</button> 
        <svg aria-hidden="true" class="icon-filter-ds" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path stroke="currentColor" stroke-width="1.5" d="M21 8.25H10m-5.25 0H3"></path><path stroke="currentColor" stroke-width="1.5" d="M7.5 6v0a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z" clip-rule="evenodd"></path><path stroke="currentColor" stroke-width="1.5" d="M3 15.75h10.75m5 0H21"></path><path stroke="currentColor" stroke-width="1.5" d="M16.5 13.5v0a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z" clip-rule="evenodd"></path></svg>
@@ -527,7 +514,13 @@
           </section>
         </aside>
       </div>
+    
+       
+    <div id="product-grid" class="grid">
+      
+    </div>
     </main>
+
     <footer class="footer">
       <div class="footer-top">
         <div class="footer-nav">
@@ -639,5 +632,4 @@
     <script src="jordan.js"></script>
   </body>
   
-</html>
 </html>
