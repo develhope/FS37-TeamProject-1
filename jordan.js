@@ -562,6 +562,8 @@ const titleHeader = document.getElementsByClassName("title-header");
 const tendinaOrdina = document.getElementById("menu");
 const ordinaBtn = document.getElementById("ordinaBtn");
 const freccia = document.querySelector("#freccia img");
+const filtra = document.getElementById("filtraBtn");
+const filtri = document.getElementById("sidebar");
 titleHeader.innerHTML = `Collezione Jordan (${jordanProducts.length})`;
 
 ordinaBtn.addEventListener("click", () => {
@@ -572,6 +574,15 @@ ordinaBtn.addEventListener("click", () => {
     tendinaOrdina.style.display = "none";
     freccia.classList.remove("freccia-su");
   }
+});
+
+filtra.addEventListener("click", () => {
+  if(filtri.style.display === "flex"){
+    filtri.style.display = "none";
+  } else {
+    filtri.style.display = "flex";
+  }
+
 });
 
 jordanProducts.forEach((product) => {

@@ -1569,6 +1569,7 @@ aside.sidebar.open {
   .links-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+ 
 }
 
 /* <<<<<<< HEAD */
@@ -1825,11 +1826,6 @@ aside.sidebar.open {
   transition: background-color 0.2s ease;
 }
 
-/* .menu-dropdown{
-  position: absolute;
-  top: 100%;
-  left: 0;
-} */
 
 .freccia-su {
   transform: rotate(180deg);
@@ -1840,5 +1836,8 @@ aside.sidebar.open {
 #freccia img {
   transition: transform 0.3s ease;
 }
+
+
+
 
 
