@@ -203,16 +203,24 @@ const jordanProducts = [
 
 const grid = document.getElementById("product-grid");
 const titleHeader = document.getElementById("title-header");
-const tendinaOrdina= document.getElementById("ordina");
+const tendinaOrdina= document.getElementById("menu");
+const ordinaBtn = document.getElementById("ordinaBtn");
+const freccia = document.querySelector("#freccia img");
 titleHeader.innerHTML = `Collezione Jordan (${jordanProducts.length})`;
-tendinaOrdina.innerHTML = `<div id="menu">
-            <ul>
-              <li id="evidenza">In evidenza</li>
-              <li id="novita">Novità</li>
-              <li id="p-decr">Prezzo: alto-basso</li>
-              <li id="p-cresc">Prezzo: basso-alto</li>
-            </ul>
-          </div>`;
+
+ordinaBtn.addEventListener("click", () => {
+  
+  if (tendinaOrdina.style.display === "none") {
+    freccia.classList.toggle("freccia-su");
+    tendinaOrdina.style.display = "block";
+    
+  } else {
+    tendinaOrdina.style.display = "none";
+    freccia.classList.remove("freccia-su");
+    
+  }
+});
+
 jordanProducts.forEach(product => {
   const card = document.createElement("div");
   card.className = "card";

@@ -1240,4 +1240,39 @@ nav {
 
 #menu{
   display: none;
+ 
+}
+
+#ordina{
+  position: absolute;
+}
+
+
+#menu ul {
+  
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  padding: 0.5rem 0;
+  list-style: none;
+  
+}
+
+/* Voci di menù */
+#menu li {
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.freccia-su {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+/* Freccia normale */
+#freccia img {
+  transition: transform 0.3s ease;
 }
