@@ -1261,3 +1261,147 @@ nav a:hover {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/*Carosello*/
+
+.carousel {
+    width: 100%;
+    min-height: 60px;
+    background-color: var(--color-light-grey); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+    position: relative;
+}
+
+.carousel-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    position: relative;
+}
+
+.carousel-text-wrapper {
+    display: flex; 
+    transition: transform 0.5s ease-in-out; 
+    height: 100%;
+    width: 100%;
+}
+
+.slide {
+    display: flex; 
+    text-align: center;
+    flex-shrink: 0; 
+    width: 100%; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; 
+    gap: 10px;
+}
+
+.slide p {
+    font-weight: bold;
+    color: var(--color-black);
+}
+
+.slide a {
+    text-decoration: underline;
+    color: var(--color-black);
+    font-weight: bold;  
+}
+
+.delivery-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    line-height: 1.3;
+    gap: 30px;
+}
+
+.delivery-info p:first-child {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.delivery-info p {
+    display: block;
+    font-weight: 500;
+    
+}
+
+.delivery-info p a {
+    display: inline; 
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.delivery-info a {
+    font-weight: bold;
+}
+
+.carousel .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    cursor: pointer;
+    color: #999; 
+    z-index: 10; 
+    transition: color 0.3s ease;
+}
+
+.carousel .left-arrow {
+    left: calc(50% - 400px); 
+}
+
+.carousel .right-arrow {
+    right: calc(50% - 400px);
+}
+
+.arrow:hover {
+    color: var(--color-black); 
+}
+
+/*Responsive Carosello*/
+
+
+@media (max-width: 1024px) {
+  .carousel .left-arrow {
+      left: -40px;
+  }
+
+  .carousel .right-arrow {
+      right: -40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel .left-arrow {
+      left: -30px;
+  }
+
+  .carousel .right-arrow {
+      right: -30px;
+  }
+}
+
+@media (max-width: 600px) {
+.carousel .arrow {
+    display: none;
+}
+
+.carousel-text-wrapper {
+    padding: 0 5px; 
+}
+
+.delivery-info {
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+} 
+
+}
+
+/*Fine Carosello*/
