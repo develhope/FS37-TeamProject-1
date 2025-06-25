@@ -1185,6 +1185,17 @@ aside.sidebar {
   height: 100%;
 }
 
+.profili-scarpe{
+  border-bottom: 1px solid #eee;
+  padding: 0px 24px 5px 20px;
+  padding-bottom: 40px;
+}
+
+.profili-scarpe li a{
+  font-weight: 600;
+  font-size: 16px;
+}
+
 .page-wrapper {
   display: flex;
   align-items: flex-start; /* optional, aligns items to the top */
