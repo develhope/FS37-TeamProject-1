@@ -564,6 +564,7 @@ const ordinaBtn = document.getElementById("ordinaBtn");
 const freccia = document.querySelector("#freccia img");
 const filtra = document.getElementById("filtraBtn");
 const filtri = document.getElementById("sidebar");
+const pageWrapper = document.getElementsByClassName("page-wrapper")
 titleHeader.innerHTML = `Collezione Jordan (${jordanProducts.length})`;
 
 ordinaBtn.addEventListener("click", () => {
@@ -579,6 +580,8 @@ ordinaBtn.addEventListener("click", () => {
 filtra.addEventListener("click", () => {
   if(filtri.style.display === "flex"){
     filtri.style.display = "none";
+    grid.style.width = "100%";
+    grid.style.paddingLeft = "48px";
   } else {
     filtri.style.display = "flex";
   }
