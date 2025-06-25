@@ -1788,7 +1788,7 @@ aside.sidebar.open {
 
 #ordina{
   position: absolute;
-  top: 70%;
+  top: 42%;
   left: 84.5%;
 }
 
@@ -1802,8 +1802,7 @@ aside.sidebar.open {
   width: 200px;
   padding: 0.5rem 0;
   list-style: none;
-  top: 90%;
-  left: 0;
+ 
 }
 
 /* Voci di menù */
