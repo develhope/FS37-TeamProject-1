@@ -670,15 +670,17 @@ svg {
 
 /* ======= BOTTOM ======= */
 
+
 .footer-bottom-top {
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 0.75rem;
   max-width: 75rem;
-  padding: 0 1.25rem 6.25rem;
+  padding: 1.5rem 1.25rem; /* padding top/bottom 1.5rem, left/right 1.25rem */
+  box-sizing: border-box;
 }
 
 .footer-bottom-top span {
@@ -723,6 +725,8 @@ svg {
   color: var(--color-black);
   text-decoration: none;
 }
+
+
 
 /*guide dropdown*/
 
@@ -1069,7 +1073,6 @@ nav {
   display: flex;
   align-items: center;
   position: relative;
-  justify-content: center;
 }
 
 nav a {
@@ -1087,6 +1090,13 @@ nav a:hover {
 .menu-item {
   position: relative;
   display: inline-block;
+}
+
+.menu-item a {
+  display: flex;
+justify-content: flex-start;
+flex-wrap: nowrap;
+gap: 8px;;
 }
 
 /* Submenu */
@@ -1184,7 +1194,7 @@ aside.sidebar {
 
 .sidebar {
   width: 280px;
-  height: 100vh;
+
   padding: 16px;
   display: flex;
   flex-direction: column;
@@ -1207,7 +1217,7 @@ padding-bottom: 200px;
 .grid,
 #product-grid.grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Responsive */
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
   gap: 20px;
   padding-left: 0;
   padding-right: 0;
@@ -1238,6 +1248,7 @@ padding-bottom: 200px;
   text-decoration: none;
   font-size: 14px;
   align-items: flex-start;
+
   
 }
 
@@ -1245,6 +1256,7 @@ padding-bottom: 200px;
   display: flex;
   align-items: center;
   gap: 0.1rem;
+  padding-top: 20px;
 }
 
 .collection-nav ul li a {
@@ -1806,3 +1818,4 @@ aside.sidebar.open {
   transition: transform 0.3s ease;
 }
 >>>>>>> prodotti-jordan
+
