@@ -1110,7 +1110,6 @@ gap: 8px;;
   background-color: white;
   width: 800px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-  z-index: 9999;
   border-radius: 8px;
   padding: 40px;
   margin-top: 8px;
@@ -1837,7 +1836,178 @@ aside.sidebar.open {
   transition: transform 0.3s ease;
 }
 
+/* ultime modifiche css*/
+@media (max-width: 1024px) {
+  aside.sidebar.open {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    z-index: 1000;
+    overflow-y: auto;
+    padding-top: 60px; /* Spazio per il pulsante chiudi */
+  }
 
+  /* Pulsante chiudi per sidebar mobile */
+  aside.sidebar.open::before {
+    content: "✕";
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f5f5f5;
+    border-radius: 50%;
+  }
 
+  /* Fix grid prodotti su mobile */
+  .grid,
+  #product-grid.grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 0 15px;
+  }
 
+  /* Fix page wrapper */
+  .page-wrapper {
+    flex-direction: column;
+    height: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+/* Mobile piccoli */
+@media (max-width: 768px) {
+  /* Grid a colonna singola */
+  .grid,
+  #product-grid.grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 0 10px;
+  }
+
+  /* Fix padding fissi */
+  .collection-nav h2,
+  .resume,
+  .filter-group,
+  .collection-nav ul {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* Fix wall header */
+  .wall-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 0 15px 15px;
+  }
+
+  #head-filter {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+/* ========== FIX PER IL MENU A COMPARSA ========== */
+
+/* Aumenta l'area di hover e aggiungi un delay */
+.menu-item .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  width: 800px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  z-index: 9999;
+  border-radius: 8px;
+  padding: 40px;
+  margin-top: -10px; /* Riduco lo spazio per evitare il gap */
+  border: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Crea un'area invisibile per mantenere l'hover */
+.menu-item::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 20px; /* Area buffer invisibile */
+}
+
+/* Mostra il submenu con transizione smooth */
+.menu-item:hover .submenu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.1s; /* Piccolo delay prima di mostrare */
+}
+
+/* Mantieni il submenu visibile quando ci si sposta sopra */
+.submenu:hover {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Fix per submenu su schermi più piccoli */
+@media (max-width: 1200px) {
+  .menu-item .submenu {
+    width: 600px;
+    padding: 30px;
+  }
+  
+  .submenu-grid {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 960px) {
+  /* Il menu è nascosto su mobile, quindi non serve il submenu */
+  .menu-item .submenu {
+    display: none !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .resume h2 {
+    font-size: 20px;
+  }
+  
+  #result-count {
+    font-size: 20px;
+  }
+  
+  /* Card prodotti più piccole su mobile */
+  .card-content {
+    max-width: 100%;
+  }
+  
+  #img-products img {
+    max-height: 250px;
+  }
+  
+  /* Menu ordinamento mobile */
+  #menu {
+    right: 0;
+    left: auto;
+    border-radius: 20px 0 0 20px;
+  }
+}
 
